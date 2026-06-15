@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Het Patel — Portfolio Resume</title>
+  <style>
+    /* Slate Night & Emerald Green Core Specifications */
+    :root {
+      --bg-dark: #0F172A;
+      --bg-surface: #1E293B;
+      --bg-active: #334155;
+      --border-color: #475569;
+      --text-main: #CBD5E1;
+      --accent-emerald: #10B981;
+      --accent-mint: #34D399;
+      --text-white: #F8FAFC;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    /* Core Typographic & Inline Element Layouts */
+    h1, h2, h3 {
+      color: var(--text-white);
+      font-weight: 600;
+    }
+
+    h2 {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-top: 32px;
+    }
+
+    a {
+      color: var(--accent-mint);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border-color);
+      margin: 32px 0;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .center-wrapper {
+      text-align: center;
+    }
+
+    /* Badge & Asset Layout Controls */
+    .badge-row {
+      margin: 12px 0;
+    }
+
+    .badge-row img {
+      margin: 0 4px 6px 4px;
+      vertical-align: middle;
+    }
+
+    .tech-stack-row {
+      margin: 16px 0;
+    }
+
+    .tech-stack-row img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Interactive Dropdown & Details Cards */
+    details {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      margin-bottom: 16px;
+      padding: 16px;
+    }
+
+    details[open] {
+      background: var(--bg-active);
+    }
+
+    summary {
+      font-size: 1.15em;
+      font-weight: bold;
+      color: var(--accent-mint);
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+    }
+
+    .project-meta {
+      margin: 8px 0;
+      font-size: 0.95em;
+      color: #94A3B8;
+    }
+
+    /* Tabular Layouts Rules */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--bg-surface);
+      color: var(--accent-mint);
+    }
+
+    /* Fixed Code Block Formats */
+    code {
+      background-color: rgba(148, 163, 184, 0.3);
+      padding: 0.2em 0.4em;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+      font-size: 85%;
+    }
+
+    pre {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 16px;
+      overflow: auto;
+    }
+
+    pre code {
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+      font-size: 90%;
+    }
+
+    /* High-Fidelity Print Engine Adjustments */
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #1E293B !important;
+        padding: 0;
+      }
+      
+      h1, h2, h3 {
+        color: #1E293B !important;
+      }
+
+      h2 {
+        border-bottom: 1px solid #CBD5E1;
+      }
+
+      a {
+        color: #047857 !important;
+      }
+
+      details {
+        background: transparent !important;
+        border: 1px solid #CBD5E1 !important;
+        page-break-inside: avoid;
+      }
+
+      details[open] {
+        background: transparent !important;
+      }
+
+      summary {
+        color: #047857 !important;
+      }
+
+      table, pre {
+        page-break-inside: avoid;
+      }
+
+      th {
+        background-color: #F8FAFC !important;
+        color: #1E293B !important;
+        border: 1px solid #CBD5E1 !important;
+      }
+
+      td {
+        border: 1px solid #CBD5E1 !important;
+      }
+
+      code {
+        background-color: rgba(148, 163, 184, 0.2) !important;
+      }
+
+      pre {
+        background-color: #F8FAFC !important;
+        border: 1px solid #CBD5E1 !important;
+      }
+      
+      .analytics-row img {
+        max-width: 48% !important;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="center-wrapper">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,100:10B981&height=220&section=header&text=Het%20Patel&fontSize=70&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Aspiring%20Full-Stack%20Developer%20%7C%20Cloud%20Computing%20Enthusiast&descAlignY=55&descSize=20" style="width: 100%; border-radius: 6px;" alt="Header Graphic"/>
+    
+    <div style="margin-top: 15px;">
+      <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=24&duration=3000&pause=800&color=34D399&center=true&vCenter=true&width=600&lines=Building+full-stack+web+applications;Exploring+Cloud+%26+DevOps;Always+learning+something+new" alt="Typing SVG"/>
+    </div>
+
+    <div class="badge-row">
+      <img src="https://img.shields.io/badge/B.Tech-Computer%20Science%20%26%20Applied%20Math-10B981?style=for-the-badge&labelColor=0F172A" alt="B.Tech"/>
+      <img src="https://img.shields.io/badge/Adani%20University-2025%E2%80%932030-10B981?style=for-the-badge&labelColor=0F172A" alt="University"/>
+      <img src="https://img.shields.io/badge/Location-Ahmedabad%2C%20India-10B981?style=for-the-badge&labelColor=0F172A" alt="Location"/>
+    </div>
+
+    <div class="badge-row">
+      <a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0F172A?style=for-the-badge&logo=linkedin&logoColor=10B981" alt="LinkedIn"/></a>
+      <a href="mailto:patelhet.0507@gmail.com"><img src="https://img.shields.io/badge/Gmail-0F172A?style=for-the-badge&logo=gmail&logoColor=10B981" alt="Gmail"/></a>
+      <a href="https://github.com/patelhet0507" target="_blank"><img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=10B981" alt="GitHub"/></a>
+    </div>
+
+    <div class="badge-row">
+      <img src="https://komarev.com/ghpvc/?username=patelhet0507&label=Profile%20Views&color=10B981&style=for-the-badge" alt="Profile Views"/>
+      <img src="https://img.shields.io/github/followers/patelhet0507?label=Followers&style=for-the-badge&color=10B981&labelColor=0F172A" alt="Followers"/>
+    </div>
+  </div>
+
+  <hr/>
+
+  <h2>👋 About Me</h2>
+  <p>I'm <strong>Het Patel</strong>, an aspiring <strong>Full-Stack Developer</strong> and <strong>Cloud Computing Enthusiast</strong>, currently pursuing an <strong>Integrated B.Tech in Computational & Applied Mathematics</strong> (with <strong>M.Tech in Cloud Computing</strong>) at <strong>Adani University</strong>, India.</p>
+  <ul>
+    <li>🚀 Passionate about turning ideas into real, scalable web applications</li>
+    <li>☁️ Building toward a strong foundation in cloud infrastructure and deployment</li>
+    <li>🧩 Comfortable across the stack — from responsive frontends to API-driven backends</li>
+    <li>📈 Goal-driven, curious, and always exploring new technologies</li>
+    <li>🌱 Currently strengthening skills in Python frameworks, modern frontend tooling, and cloud-native development</li>
+  </ul>
+
+  <h3>🎯 Open To</h3>
+  <ul>
+    <li>💼 <strong>Early-Stage Developer Internships</strong> — Seeking foundational development roles to apply my growing skills in full-stack building and learn from engineering teams.</li>
+    <li>🔬 <strong>Academic & Student Research Modules</strong> — Eager to assist in software prototyping, algorithmic logic verification, or data layout structures.</li>
+    <li>🤝 <strong>Open-Source Collaborations</strong> — Enthusiastic about joining beginner-friendly student codebases, fixing code documentation, or polishing user interfaces.</li>
+    <li>💬 <strong>Technical Guidance</strong> — Looking to connect with developers, seniors, and industry mentors to study clean architecture patterns.</li>
+  </ul>
+
+  <hr/>
+
+  <h2>🧠 Tech Stack</h2>
+  
+  <p><strong>Languages</strong></p>
+  <div class="tech-stack-row"><img src="https://skillicons.dev/icons?i=ts,js,py&theme=dark" alt="Languages"/></div>
+
+  <p><strong>Frontend</strong></p>
+  <div class="tech-stack-row"><img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind,vite&theme=dark" alt="Frontend"/></div>
+
+  <p><strong>Backend & Databases</strong></p>
+  <div class="tech-stack-row"><img src="https://skillicons.dev/icons?i=django,fastapi,postgres,firebase&theme=dark" alt="Backend"/></div>
+
+  <p><strong>Cloud, DevOps & Tooling</strong></p>
+  <div class="tech-stack-row"><img src="https://skillicons.dev/icons?i=firebase,git,github&theme=dark" alt="Tools"/></div>
+
+  <hr/>
+
+  <h2>🚀 Featured Projects</h2>
+
+  <details open>
+    <summary>🏠 Rental Management SaaS Platform</summary>
+    <div class="project-meta"><strong>May 2026 – Jun 2026</strong> &nbsp;·&nbsp; Adani University &nbsp;·&nbsp; 🌐 <a href="https://rental-module.firebaseapp.com" target="_blank">Live Demo</a></div>
+    <p>A full-stack, cloud-hosted SaaS platform for property and tenant management — manage properties, tenants, agreements, and billing all from one dashboard.</p>
+    <ul>
+      <li>Built the frontend landing page and management dashboard with HTML, CSS, and JavaScript</li>
+      <li>Implemented secure user authentication and access control with Firebase Authentication</li>
+      <li>Integrated Firebase Hosting & CLI for cloud deployment, with custom routing and rewrite rules</li>
+      <li>Designed the application structure for scalable, server-side interactions</li>
+      <li>Deployed end-to-end to a production environment, gaining hands-on experience with serverless infrastructure and deployment pipelines</li>
+    </ul>
+    <p>
+      <img src="https://img.shields.io/badge/JavaScript-0F172A?style=flat-square&logo=javascript&logoColor=10B981" alt="JS"/>
+      <img src="https://img.shields.io/badge/HTML5-0F172A?style=flat-square&logo=html5&logoColor=10B981" alt="HTML5"/>
+      <img src="https://img.shields.io/badge/CSS3-0F172A?style=flat-square&logo=css3&logoColor=10B981" alt="CSS3"/>
+      <img src="https://img.shields.io/badge/Firebase-0F172A?style=flat-square&logo=firebase&logoColor=10B981" alt="Firebase"/>
+    </p>
+  </details>
+
+  <details open>
+    <summary>🛒 ShopEase — Full-Stack E-Commerce Platform</summary>
+    <div class="project-meta">Adani University &nbsp;·&nbsp; 🌐 <a href="https://shop-ease-steel.vercel.app" target="_blank">Live Demo</a></div>
+    <p>A production-ready e-commerce application built from the ground up, focused on a seamless shopping experience with an emphasis on performance, scalability, and clean code practices.</p>
+    <ul>
+      <li>Secure user authentication and authorization</li>
+      <li>Product catalog and category management</li>
+      <li>Shopping cart and checkout workflows</li>
+      <li>PostgreSQL database integration with FastAPI-powered backend APIs</li>
+      <li>Responsive, modern UI built with Next.js</li>
+    </ul>
+    <p>
+      <img src="https://img.shields.io/badge/Next.js-0F172A?style=flat-square&logo=nextdotjs&logoColor=10B981" alt="Next.js"/>
+      <img src="https://img.shields.io/badge/React-0F172A?style=flat-square&logo=react&logoColor=10B981" alt="React"/>
+      <img src="https://img.shields.io/badge/FastAPI-0F172A?style=flat-square&logo=fastapi&logoColor=10B981" alt="FastAPI"/>
+      <img src="https://img.shields.io/badge/PostgreSQL-0F172A?style=flat-square&logo=postgresql&logoColor=10B981" alt="PostgreSQL"/>
+    </p>
+  </details>
+
+  <details>
+    <summary>🗄️ Multi-User Database System with Admin Access</summary>
+    <div class="project-meta"><strong>Oct 2025 – Dec 2025</strong></div>
+    <p>A system where each user gets an individual database created on login, ensuring data isolation and security — plus an admin role with centralized access to all user data.</p>
+    <ul>
+      <li>Role-based access control (Admin vs. User)</li>
+      <li>Secure data separation across users</li>
+      <li>Centralized admin monitoring dashboard</li>
+    </ul>
+    <p>
+      <img src="https://img.shields.io/badge/Firebase-0F172A?style=flat-square&logo=firebase&logoColor=10B981" alt="Firebase"/>
+    </p>
+  </details>
+
+  <details>
+    <summary>🎯 FocusFlow — Productivity & Focus Management System</summary>
+    <div class="project-meta">Adani University &nbsp;·&nbsp; Status: In Development</div>
+    <p>A productivity and time management system designed to help students stay focused, organized, and consistent — tackling real problems like procrastination, poor time management, and lack of consistency in studies.</p>
+    <ul>
+      <li>Task and schedule management for daily planning</li>
+      <li>Pomodoro-based focus timer to enhance productivity</li>
+      <li>Progress tracking and performance insights</li>
+      <li>Clean, distraction-free user interface</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>📋 Duty Master Performa 2024–25</summary>
+    <div class="project-meta"><strong>Oct 2024 – Dec 2024</strong> &nbsp;·&nbsp; Anant School of Excellence</div>
+    <p>A structured system to manage and organize duty allocations efficiently, simplifying scheduling and improving visibility of assigned tasks.</p>
+    <ul>
+      <li>Clear duty assignment tracking</li>
+      <li>Organized data handling</li>
+      <li>Improved operational efficiency</li>
+    </ul>
+  </details>
+
+  <hr/>
+
+  <h2>🎓 Education</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Institution</th>
+        <th>Program</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Adani University</strong></td>
+        <td>B.Tech, Computational & Applied Mathematics</td>
+        <td>2025 – 2030</td>
+      </tr>
+      <tr>
+        <td><strong>Anant School of Excellence</strong></td>
+        <td>High School, Science</td>
+        <td>Jun 2023 – Jun 2025</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr/>
+
+  <h2>📊 GitHub Analytics</h2>
+  <div class="center-wrapper analytics-row" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+    <object data="https://github-readme-stats.vercel.app/api?username=patelhet0507&show_icons=true&theme=emerald&hide_border=true&bg_color=0F172A&title_color=10B981&icon_color=10B981&text_color=CBD5E1" type="image/svg+xml" style="width: 48%; max-width: 400px;"></object>
+    
+    <object data="https://streak-stats.demolab.com/?user=patelhet0507&theme=dark&hide_border=true&background=0F172A&ring=10B981&fire=10B981&currStreakLabel=10B981" type="image/svg+xml" style="width: 48%; max-width: 400px;"></object>
+    
+    <object data="https://github-readme-stats.vercel.app/api/top-langs/?username=patelhet0507&layout=compact&theme=emerald&hide_border=true&bg_color=0F172A&title_color=10B981&text_color=CBD5E1" type="image/svg+xml" style="width: 48%; max-width: 400px; margin-top: 15px;"></object>
+  </div>
+  <hr/>
+
+  <h2>🎯 Dev Metrics Matrix</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Core Track</th>
+        <th>Focus Alignment</th>
+        <th>Core Toolset</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>💻 <strong>Full-Stack Development</strong></td>
+        <td>Component Logic, API Routes & Database Schemas</td>
+        <td><code>Next.js</code> · <code>React</code> · <code>FastAPI</code> · <code>Django</code></td>
+      </tr>
+      <tr>
+        <td>☁️ <strong>Cloud Infrastructure</strong></td>
+        <td>Serverless Architecture & Hosting Configurations</td>
+        <td><code>Firebase</code> · <code>Git Workflow</code> · <code>CI/CD Basics</code></td>
+      </tr>
+      <tr>
+        <td>🔬 <strong>Applied Mathematics</strong></td>
+        <td>Algorithmic Engineering & Structural Data Relations</td>
+        <td><code>Python</code> · <code>Data Models</code> · <code>Logical Constraints</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr/>
+
+  <h2>⚡ Development Velocity & Commit Cadence</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Core Framework</th>
+        <th>Project Scope Execution</th>
+        <th>Deployment Runtime Pipeline</th>
+        <th>Velocity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Next.js / React</strong></td>
+        <td>Dynamic Client Interfaces & State Synchronization</td>
+        <td>Vercel Serverless Edge</td>
+        <td>🔥 Active</td>
+      </tr>
+      <tr>
+        <td><strong>FastAPI / Django</strong></td>
+        <td>Robust REST API Endpoints & Request Validation Middleware</td>
+        <td>Local Docker Layers / Cloud Run</td>
+        <td>🔄 High</td>
+      </tr>
+      <tr>
+        <td><strong>PostgreSQL</strong></td>
+        <td>Relational Schemas, Primary Key Indexing & Queries</td>
+        <td>Isolated Cloud Instances</td>
+        <td>⚡ Consistent</td>
+      </tr>
+      <tr>
+        <td><strong>Firebase Services</strong></td>
+        <td>User Identity Authentication & Direct Client CLI Routing</td>
+        <td>Firebase Cloud Production Hosting</td>
+        <td>🚀 Production Ready</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr/>
+
+  <h2>🔭 Current Focus</h2>
+  <pre><code>Learning:
+  - Core algorithmic structures & data relations in Python/C
+  - Basics of API endpoint configuration using FastAPI
+  - Relational database schema indexing in PostgreSQL
+Building:
+  - Clean client layouts using standard framework templates
+  - Modular single-page interfaces with Next.js
+Exploring:
+  - Foundational scripting mechanics & local version workflows
+  - Introductory virtualization layers & deployment setups
+Open_To:
+  - Student developer internships
+  - Open-source tracking tasks</code></pre>
+
+  <hr/>
+
+  <div class="center-wrapper" style="margin-top: 40px;">
+    <p><em>"Building today the systems I want to scale tomorrow."</em></p>
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:10B981,100:0F172A&height=120&section=footer" style="width: 100%; border-radius: 6px;" alt="Footer Graphic"/>
+  </div>
+
+</div>
+
+</body>
+</html>
