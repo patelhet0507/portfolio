@@ -338,6 +338,11 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 .reveal-delay-2{transition-delay:0.2s}
 .reveal-delay-3{transition-delay:0.3s}
 .reveal-delay-4{transition-delay:0.4s}
+[data-stagger]>*{opacity:0;transform:translateY(28px);transition:opacity 0.6s cubic-bezier(0.16,1,0.3,1),transform 0.6s cubic-bezier(0.16,1,0.3,1)}
+[data-stagger].visible>*{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){
+  .reveal,[data-stagger]>*{opacity:1!important;transform:none!important;transition:none!important}
+}
 
 /* ── Contact Form ── */
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px}
@@ -466,8 +471,8 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <h2>About</h2>
     <div class="line"></div>
   </div>
-  <div class="bento">
-    <div class="bento-card col-2 reveal">
+  <div class="bento" data-stagger>
+    <div class="bento-card col-2">
       <span class="icon">👋</span>
       <h3>Hey, I'm Het Patel</h3>
       <p>I'm a full-stack developer and Integrated B.Tech + M.Tech student at Adani University, specializing in Computer Science, Applied Mathematics, and Cloud Computing. I love building end-to-end solutions — architecting databases, designing APIs, and crafting interfaces that people enjoy using. Every line of code should earn its place.</p>
@@ -478,13 +483,13 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <span class="tag">API Design</span>
       </div>
     </div>
-    <div class="bento-card reveal reveal-delay-1">
+    <div class="bento-card">
       <span class="icon">🎓</span>
       <h3>Education</h3>
       <p style="font-size:0.85rem"><strong style="color:var(--text-bright)">Integrated B.Tech + M.Tech</strong><br>CS & Applied Mathematics<br>Cloud Computing</p>
       <p style="color:var(--accent-light);font-size:0.78rem;margin-top:6px">Adani University — 2025–2030</p>
     </div>
-    <div class="bento-card reveal reveal-delay-2">
+    <div class="bento-card">
       <span class="icon">🏆</span>
       <h3>Highlights</h3>
       <div style="font-size:0.85rem;color:var(--text-dim);line-height:2">
@@ -493,7 +498,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <div>🤖 Microsoft Certified: Gen AI</div>
       </div>
     </div>
-    <div class="bento-card col-2 reveal reveal-delay-1">
+    <div class="bento-card col-2">
       <span class="icon">🧠</span>
       <h3>Focus Areas</h3>
       <div class="tags" style="margin-top:10px">
@@ -505,7 +510,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <span class="tag">System Design</span>
       </div>
     </div>
-    <div class="bento-card reveal reveal-delay-3">
+    <div class="bento-card">
       <span class="icon">📬</span>
       <h3>Contact</h3>
       <p style="font-size:0.85rem;margin-bottom:2px">patelhet.0507@gmail.com</p>
@@ -535,8 +540,8 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <h2>Experience</h2>
     <div class="line"></div>
   </div>
-  <div class="timeline">
-    <div class="tl-item reveal">
+  <div class="timeline" data-stagger>
+    <div class="tl-item">
       <div class="tl-dot"></div>
       <div class="tl-card">
         <h3>Backend Developer Intern</h3>
@@ -544,7 +549,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <p>Designed and implemented clean REST APIs in Python for authentication and business logic. Optimized PostgreSQL query performance and relational schemas. Delivered production-ready features following clean-code and performance-first engineering standards.</p>
       </div>
     </div>
-    <div class="tl-item reveal reveal-delay-1">
+    <div class="tl-item">
       <div class="tl-dot"></div>
       <div class="tl-card">
         <h3>Full Stack Developer Intern</h3>
@@ -562,8 +567,8 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <h2>Skills</h2>
     <div class="line"></div>
   </div>
-  <div class="skills-grid">
-    <div class="skill-card reveal">
+  <div class="skills-grid" data-stagger>
+    <div class="skill-card">
       <h3>Languages</h3>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python">
@@ -574,7 +579,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       </div>
       <div class="skill-list-text">Python, C++, JavaScript, TypeScript, SQL, C</div>
     </div>
-    <div class="skill-card reveal reveal-delay-1">
+    <div class="skill-card">
       <h3>Backend</h3>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=fastapi&theme=dark" alt="FastAPI">
@@ -584,7 +589,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       </div>
       <div class="skill-list-text">FastAPI, Flask, PostgreSQL, Firebase, Supabase</div>
     </div>
-    <div class="skill-card reveal reveal-delay-2">
+    <div class="skill-card">
       <h3>Frontend &amp; Tools</h3>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React">
@@ -605,8 +610,8 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <h2>Projects</h2>
     <div class="line"></div>
   </div>
-  <div class="projects-grid">
-    <div class="project-card grad-border reveal">
+  <div class="projects-grid" data-stagger>
+    <div class="project-card grad-border">
       <span class="badge">SaaS</span>
       <h3>Rental Management System</h3>
       <p>Scalable property management SaaS with multi-property agreements, tenant tracking, transaction management, and full CRUD operations. Built with React, Firebase, and Tailwind CSS.</p>
@@ -619,7 +624,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://rental-module.vercel.app/" target="_blank">Live Demo &rarr;</a>
       </div>
     </div>
-    <div class="project-card grad-border reveal reveal-delay-1">
+    <div class="project-card grad-border">
       <span class="badge">Full Stack</span>
       <h3>ShopEase — E-Commerce</h3>
       <p>End-to-end storefront with JWT authentication, product catalog with search, live cart, reviews, and comprehensive admin panel with inventory and order management.</p>
@@ -633,7 +638,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://github.com/patelhet0507/ShopEase_final" target="_blank">GitHub &rarr;</a>
       </div>
     </div>
-    <div class="project-card grad-border reveal reveal-delay-2">
+    <div class="project-card grad-border">
       <span class="badge">AI</span>
       <h3>Local AI Chat Assistant</h3>
       <p>Offline privacy-first chatbot using local LLM inference via Ollama. Telegram OTP authentication, persistent session tracking, and local SQLite storage — zero third-party network dependencies.</p>
@@ -646,7 +651,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://github.com/patelhet0507" target="_blank">GitHub &rarr;</a>
       </div>
     </div>
-    <div class="project-card grad-border reveal reveal-delay-3">
+    <div class="project-card grad-border">
       <span class="badge">Hackathon</span>
       <h3>TransitOps</h3>
       <p>Transport operations management built in an 8-hour Odoo Hackathon. Live vehicle tracking, dynamic dispatch, predictive maintenance, and real-time expense analytics dashboards.</p>
@@ -660,7 +665,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://github.com/patelhet0507/odoo-hackathon" target="_blank">GitHub &rarr;</a>
       </div>
     </div>
-    <div class="project-card grad-border reveal reveal-delay-1" style="grid-column:1/-1">
+    <div class="project-card grad-border" style="grid-column:1/-1">
       <span class="badge">Library</span>
       <h3>eBook Library Platform</h3>
       <p>Digital media indexing and reading platform with authenticated user profiles, full-text search across the book catalog, interactive library management, and real-time cloud storage via Firebase.</p>
@@ -843,6 +848,20 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     });
   },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){revealObserver.observe(el)});
+
+  var staggerObserver=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var kids=e.target.children;
+        for(var i=0;i<kids.length;i++){
+          kids[i].style.transitionDelay=(i*0.09)+'s';
+        }
+        e.target.classList.add('visible');
+        staggerObserver.unobserve(e.target);
+      }
+    });
+  },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('[data-stagger]').forEach(function(el){staggerObserver.observe(el)});
 
   // ── Contact Form ──
   var contactForm=document.getElementById('contact-form');
