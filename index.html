@@ -341,6 +341,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 }
 .form-btn:hover{background:var(--accent-light);box-shadow:0 8px 25px rgba(16,185,129,0.25)}
 .form-btn:disabled{opacity:0.5;cursor:not-allowed}
+.g-recaptcha{transform:scale(0.9);transform-origin:left center;filter:brightness(0.9) contrast(1.1)}
 .form-status{margin-top:12px;font-size:0.85rem;text-align:center;display:none}
 .form-status.success{color:var(--accent-light);display:block}
 .form-status.error{color:#ef4444;display:block}
@@ -688,6 +689,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <label for="form-message">Message</label>
         <textarea id="form-message" name="message" placeholder="What would you like to say?" required></textarea>
       </div>
+      <div class="g-recaptcha" data-sitekey="6LfJOA4rAAAAAH69vltqWmFuq-j9U3EbuDM3AmQZ" style="margin-bottom:16px"></div>
       <button type="submit" class="form-btn" id="form-btn">Send Message</button>
       <div class="form-status" id="form-status"></div>
     </form>
@@ -972,5 +974,6 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   }
 })();
 </script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
