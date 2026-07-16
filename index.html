@@ -677,15 +677,15 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <form class="contact-form reveal reveal-delay-1" id="contact-form">
       <div class="form-group">
         <label for="form-name">Name</label>
-        <input type="text" id="form-name" placeholder="Your name" required>
+        <input type="text" id="form-name" name="name" placeholder="Your name" required>
       </div>
       <div class="form-group">
         <label for="form-email">Email</label>
-        <input type="email" id="form-email" placeholder="your@email.com" required>
+        <input type="email" id="form-email" name="email" placeholder="your@email.com" required>
       </div>
       <div class="form-group">
         <label for="form-message">Message</label>
-        <textarea id="form-message" placeholder="What would you like to say?" required></textarea>
+        <textarea id="form-message" name="message" placeholder="What would you like to say?" required></textarea>
       </div>
       <button type="submit" class="form-btn" id="form-btn">Send Message</button>
       <div class="form-status" id="form-status"></div>
