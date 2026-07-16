@@ -417,7 +417,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <div class="shape"></div>
   </div>
   <div class="hero-content">
-    <div class="hero-badge reveal"><span class="pulse"></span> Open to opportunities</div>
+    <div class="hero-badge reveal"><span class="pulse"></span> <span id="greeting">Hello</span> — Open to opportunities</div>
     <h1 class="reveal">Building what matters<br>with <span class="gradient">modern systems</span></h1>
     <p class="reveal reveal-delay-1">Full-stack developer crafting scalable products from concept to deployment. I architect backend systems and build polished interfaces that solve real problems.</p>
     <div class="hero-actions reveal reveal-delay-2">
@@ -789,6 +789,15 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   document.getElementById('logo-link').addEventListener('click',function(){
     document.getElementById('hero').scrollIntoView({behavior:'smooth'});
   });
+
+  // ── Time-based greeting ──
+  (function(){
+    var h=new Date().getHours();
+    var msg='Good evening';
+    if(h<12)msg='Good morning';
+    else if(h<17)msg='Good afternoon';
+    document.getElementById('greeting').textContent=msg;
+  })();
 
   // ── Mobile Toggle ──
   var mobToggle=document.getElementById('mobile-toggle');
