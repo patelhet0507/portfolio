@@ -85,6 +85,33 @@ body.cursor-hover #cursor-ring{width:48px;height:48px;border-color:var(--accent-
   z-index:-1;pointer-events:none;opacity:0.8;
 }
 
+/* ── Back to Top ── */
+#back-to-top{
+  position:fixed;bottom:28px;right:28px;z-index:200;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--accent);color:#02040a;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;box-shadow:0 8px 25px rgba(16,185,129,0.3);
+  opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .35s,visibility .35s,transform .35s,background .25s;
+}
+#back-to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+#back-to-top:hover{background:var(--accent-light);transform:translateY(-3px)}
+
+/* ── Animated Gradient Border ── */
+.grad-border{position:relative;border-radius:var(--radius-lg)}
+.grad-border::after{
+  content:'';position:absolute;inset:0;border-radius:inherit;padding:1px;
+  background:linear-gradient(120deg,var(--accent),transparent 30%,transparent 70%,var(--accent-light));
+  background-size:300% 300%;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  animation:gradientBorder 6s linear infinite;
+  opacity:0;transition:opacity .4s;pointer-events:none;
+}
+.grad-border:hover::after{opacity:1}
+@keyframes gradientBorder{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
 /* ── Nav ── */
 header{
   position:fixed;top:0;left:0;width:100%;z-index:100;
@@ -580,7 +607,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <div class="line"></div>
   </div>
   <div class="projects-grid">
-    <div class="project-card reveal">
+    <div class="project-card grad-border reveal">
       <span class="badge">SaaS</span>
       <h3>Rental Management System</h3>
       <p>Scalable property management SaaS with multi-property agreements, tenant tracking, transaction management, and full CRUD operations. Built with React, Firebase, and Tailwind CSS.</p>
@@ -593,7 +620,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://rental-module.vercel.app/" target="_blank">Live Demo &rarr;</a>
       </div>
     </div>
-    <div class="project-card reveal reveal-delay-1">
+    <div class="project-card grad-border reveal reveal-delay-1">
       <span class="badge">Full Stack</span>
       <h3>ShopEase — E-Commerce</h3>
       <p>End-to-end storefront with JWT authentication, product catalog with search, live cart, reviews, and comprehensive admin panel with inventory and order management.</p>
@@ -607,7 +634,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://github.com/patelhet0507/ShopEase_final" target="_blank">GitHub &rarr;</a>
       </div>
     </div>
-    <div class="project-card reveal reveal-delay-2">
+    <div class="project-card grad-border reveal reveal-delay-2">
       <span class="badge">AI</span>
       <h3>Local AI Chat Assistant</h3>
       <p>Offline privacy-first chatbot using local LLM inference via Ollama. Telegram OTP authentication, persistent session tracking, and local SQLite storage — zero third-party network dependencies.</p>
@@ -620,7 +647,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://github.com/patelhet0507" target="_blank">GitHub &rarr;</a>
       </div>
     </div>
-    <div class="project-card reveal reveal-delay-3">
+    <div class="project-card grad-border reveal reveal-delay-3">
       <span class="badge">Hackathon</span>
       <h3>TransitOps</h3>
       <p>Transport operations management built in an 8-hour Odoo Hackathon. Live vehicle tracking, dynamic dispatch, predictive maintenance, and real-time expense analytics dashboards.</p>
@@ -634,7 +661,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <a href="https://github.com/patelhet0507/odoo-hackathon" target="_blank">GitHub &rarr;</a>
       </div>
     </div>
-    <div class="project-card reveal reveal-delay-1" style="grid-column:1/-1">
+    <div class="project-card grad-border reveal reveal-delay-1" style="grid-column:1/-1">
       <span class="badge">Library</span>
       <h3>eBook Library Platform</h3>
       <p>Digital media indexing and reading platform with authenticated user profiles, full-text search across the book catalog, interactive library management, and real-time cloud storage via Firebase.</p>
@@ -722,7 +749,10 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 <footer>
   <p class="quote">&ldquo;I love building things that live on the internet and solve real problems for real people.&rdquo;</p>
   <p class="copy">&copy; 2026 Het Patel — Built with purpose.</p>
+  <p class="copy" style="margin-top:6px">Visitors: <span id="visitor-count" style="color:var(--accent-light);font-family:var(--font-mono)">—</span></p>
 </footer>
+
+<button id="back-to-top" aria-label="Back to top">&#8593;</button>
 
 </main>
 
@@ -986,6 +1016,28 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       termOutput.parentElement.scrollTop=termOutput.parentElement.scrollHeight;
     });
   }
+
+  // ── Back to Top ──
+  var backToTop=document.getElementById('back-to-top');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>400)backToTop.classList.add('show');
+    else backToTop.classList.remove('show');
+  },{passive:true});
+  backToTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  // ── Visitor Counter ──
+  fetch('https://api.countapi.xyz/hit/patelhet0507/portfolio')
+    .then(function(r){return r.json();})
+    .then(function(d){
+      var el=document.getElementById('visitor-count');
+      if(el)el.textContent=d.value;
+    })
+    .catch(function(){
+      var el=document.getElementById('visitor-count');
+      if(el)el.textContent='—';
+    });
 })();
 </script>
 <script src="https://www.google.com/recaptcha/api.js?render=6Ld-xFYtAAAAAOCweBmEB9TiYhTPIuUqP1GJxquz" async defer></script>
