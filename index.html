@@ -43,6 +43,11 @@ body{
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
 ::-webkit-scrollbar-thumb:hover{background:var(--accent)}
 
+/* ── Focus Rings ── */
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+  outline:2px solid var(--accent-light);outline-offset:3px;border-radius:var(--radius-sm);
+}
+
 /* ── Loader ── */
 #loader{
   position:fixed;inset:0;z-index:9999;
@@ -137,7 +142,12 @@ header.scrolled{border-color:var(--border);background:rgba(2,4,10,0.85)}
 
 /* ── Sections ── */
 main{max-width:1100px;margin:0 auto;padding:0 24px}
-section{padding:100px 0;border-bottom:1px solid var(--border)}section:last-child{border-bottom:none}
+section{padding:100px 0;position:relative}section:not(:last-child)::after{
+  content:'';position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:min(820px,90%);height:1px;
+  background:linear-gradient(90deg,transparent,var(--border) 20%,rgba(16,185,129,0.35) 50%,var(--border) 80%,transparent);
+  box-shadow:0 0 16px rgba(16,185,129,0.12);
+}
 
 .section-label{
   display:flex;align-items:center;gap:12px;margin-bottom:48px;
