@@ -907,6 +907,12 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   var termInput=document.getElementById('term-input');
   var termOutput=document.getElementById('term-output');
   if(termInput){
+    var termObserver=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting)termInput.focus();
+      });
+    },{threshold:0.3});
+    termObserver.observe(document.getElementById('terminal'));
     var commands={
       help:'Available commands:\n  <span style="color:var(--text-white)">resume</span>    — Contact and profile info\n  <span style="color:var(--text-white)">projects</span> — List all projects\n  <span style="color:var(--text-white)">skills</span>   — Tech stack overview\n  <span style="color:var(--text-white)">about</span>    — Quick summary\n  <span style="color:var(--text-white)">clear</span>    — Clear terminal',
       resume:'Email:    <span style="color:var(--text-white)">patelhet.0507@gmail.com</span>\nGitHub:   <span style="color:var(--text-white)">github.com/patelhet0507</span>\nLinkedIn: <span style="color:var(--text-white)">linkedin.com/in/het-patel-6b2514376</span>\nLeetCode: <span style="color:var(--text-white)">leetcode.com/u/patelhet0507</span>',
