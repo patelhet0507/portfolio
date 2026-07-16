@@ -312,6 +312,40 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 .reveal-delay-3{transition-delay:0.3s}
 .reveal-delay-4{transition-delay:0.4s}
 
+/* ── Contact Form ── */
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px}
+.contact-info{display:flex;flex-direction:column;gap:16px}
+.contact-info .card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;transition:var(--transition)}
+.contact-info .card:hover{border-color:var(--border-hover)}
+.contact-info .card .label{font-size:0.72rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.05em;font-weight:500}
+.contact-info .card .value{font-size:0.9rem;color:var(--text-bright);margin-top:4px;font-weight:500}
+.contact-info .card .value a{color:var(--accent-light);text-decoration:none}
+.contact-info .card .value a:hover{color:var(--text-white)}
+.contact-form{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:var(--transition)}
+.contact-form:hover{border-color:var(--border-hover)}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:0.8rem;color:var(--text-dim);margin-bottom:6px;font-weight:500}
+.form-group input,.form-group textarea{
+  width:100%;background:var(--bg-surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:10px 14px;color:var(--text-white);
+  font-family:var(--font-sans);font-size:0.9rem;outline:none;
+  transition:var(--transition);resize:vertical;
+}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(16,185,129,0.08)}
+.form-group textarea{min-height:100px}
+.form-btn{
+  background:var(--accent);color:#02040a;border:none;
+  padding:12px 28px;border-radius:var(--radius-sm);font-size:0.9rem;
+  font-weight:600;font-family:var(--font-sans);cursor:pointer;
+  transition:var(--transition);width:100%;
+}
+.form-btn:hover{background:var(--accent-light);box-shadow:0 8px 25px rgba(16,185,129,0.25)}
+.form-btn:disabled{opacity:0.5;cursor:not-allowed}
+.form-status{margin-top:12px;font-size:0.85rem;text-align:center;display:none}
+.form-status.success{color:var(--accent-light);display:block}
+.form-status.error{color:#ef4444;display:block}
+@media(max-width:700px){.contact-wrap{grid-template-columns:1fr}}
+
 /* ── Tags ── */
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tag{
@@ -367,6 +401,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       <a data-target="experience">Experience</a>
       <a data-target="skills">Skills</a>
       <a data-target="projects">Projects</a>
+      <a data-target="contact">Contact</a>
       <a data-target="terminal">Terminal</a>
     </nav>
   </div>
@@ -614,9 +649,53 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   </div>
 </section>
 
-<section id="terminal">
+<section id="contact">
   <div class="section-label reveal">
     <span class="num">05.</span>
+    <h2>Contact</h2>
+    <div class="line"></div>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <div class="card">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:patelhet.0507@gmail.com">patelhet.0507@gmail.com</a></div>
+      </div>
+      <div class="card">
+        <div class="label">GitHub</div>
+        <div class="value"><a href="https://github.com/patelhet0507" target="_blank">github.com/patelhet0507</a></div>
+      </div>
+      <div class="card">
+        <div class="label">LinkedIn</div>
+        <div class="value"><a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank">linkedin.com/in/het-patel</a></div>
+      </div>
+      <div class="card">
+        <div class="label">Resume</div>
+        <div class="value"><a href="https://pdftourl.net/files/1784194955194-eb6917eb-9b4b-45ca-a513-4cc511cf6a78.pdf" target="_blank">View Resume &rarr;</a></div>
+      </div>
+    </div>
+    <form class="contact-form reveal reveal-delay-1" id="contact-form">
+      <div class="form-group">
+        <label for="form-name">Name</label>
+        <input type="text" id="form-name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="form-email">Email</label>
+        <input type="email" id="form-email" placeholder="your@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="form-message">Message</label>
+        <textarea id="form-message" placeholder="What would you like to say?" required></textarea>
+      </div>
+      <button type="submit" class="form-btn" id="form-btn">Send Message</button>
+      <div class="form-status" id="form-status"></div>
+    </form>
+  </div>
+</section>
+
+<section id="terminal">
+  <div class="section-label reveal">
+    <span class="num">06.</span>
     <h2>Terminal</h2>
     <div class="line"></div>
   </div>
@@ -724,6 +803,37 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     });
   },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){revealObserver.observe(el)});
+
+  // ── Contact Form ──
+  var contactForm=document.getElementById('contact-form');
+  if(contactForm){
+    contactForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      var btn=document.getElementById('form-btn');
+      var status=document.getElementById('form-status');
+      btn.disabled=true;btn.textContent='Sending...';
+      status.className='form-status';status.style.display='none';
+      fetch('https://formspree.io/f/your-form-id',{
+        method:'POST',
+        body:new FormData(contactForm),
+        headers:{'Accept':'application/json'}
+      }).then(function(r){
+        if(r.ok){
+          status.className='form-status success';status.style.display='block';
+          status.textContent='Message sent! I\'ll get back to you soon.';
+          contactForm.reset();
+        }else{
+          status.className='form-status error';status.style.display='block';
+          status.textContent='Something went wrong. Try emailing me directly.';
+        }
+        btn.disabled=false;btn.textContent='Send Message';
+      }).catch(function(){
+        status.className='form-status error';status.style.display='block';
+        status.textContent='Network error. Try emailing me directly.';
+        btn.disabled=false;btn.textContent='Send Message';
+      });
+    });
+  }
 
   // ── Counters ──
   var countersAnimated=false;
