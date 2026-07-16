@@ -233,27 +233,19 @@ section{padding:100px 0;border-bottom:1px solid var(--border)}section:last-child
 .tl-card .meta{font-size:0.8rem;color:var(--accent-light);font-weight:500;margin:4px 0 10px}
 .tl-card p{font-size:0.85rem;color:var(--text-dim);line-height:1.7}
 
-/* ── Skills Rings ── */
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px}
+/* ── Skills ── */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:40px}
 .skill-card{
   background:var(--bg-card);border:1px solid var(--border);
-  border-radius:var(--radius-md);padding:20px;text-align:center;
-  transition:var(--transition);overflow:hidden;
+  border-radius:var(--radius-lg);padding:28px 24px;text-align:left;
+  transition:var(--transition);
 }
 .skill-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-.skill-ring-wrap{position:relative;width:90px;height:90px;margin:0 auto 12px}
-.skill-ring-wrap svg{transform:rotate(-90deg);width:90px;height:90px}
-.skill-ring-bg{fill:none;stroke:var(--border);stroke-width:6}
-.skill-ring-fg{fill:none;stroke:var(--accent);stroke-width:6;stroke-linecap:round;stroke-dasharray:251.2;stroke-dashoffset:251.2;transition:stroke-dashoffset 1.2s cubic-bezier(0.16,1,0.3,1)}
-.skill-ring-fg.animated{stroke-dashoffset:var(--offset)}
-.skill-ring-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.skill-ring-label .val{font-size:1.1rem;font-weight:700;color:var(--text-white);font-family:var(--font-mono)}
-.skill-ring-label .lbl{font-size:0.6rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.05em}
-.skill-card .name{font-size:0.82rem;font-weight:600;color:var(--text-bright);margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.skill-icons{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:10px}
-.skill-icons img{width:24px;height:24px;opacity:0.7;transition:opacity 0.2s}
+.skill-card h3{font-size:0.85rem;font-weight:600;color:var(--text-white);margin-bottom:12px;letter-spacing:-0.01em}
+.skill-icons{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.skill-icons img{width:28px;height:28px;opacity:0.75;transition:opacity 0.2s}
 .skill-icons img:hover{opacity:1}
-.skill-list-text{font-size:0.72rem;color:var(--text-dim);font-family:var(--font-mono);line-height:1.7;margin-top:10px;text-align:center;word-break:break-word;overflow-wrap:break-word;max-width:100%}
+.skill-list-text{font-size:0.78rem;color:var(--text-dim);font-family:var(--font-mono);line-height:1.7}
 
 /* ── Projects ── */
 .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
@@ -510,17 +502,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   </div>
   <div class="skills-grid">
     <div class="skill-card reveal">
-      <div class="skill-ring-wrap">
-        <svg viewBox="0 0 90 90">
-          <circle class="skill-ring-bg" cx="45" cy="45" r="40"/>
-          <circle class="skill-ring-fg" cx="45" cy="45" r="40" data-pct="90"/>
-        </svg>
-        <div class="skill-ring-label">
-          <span class="val" data-pct="90">0%</span>
-          <span class="lbl">Proficient</span>
-        </div>
-      </div>
-      <div class="name">Languages</div>
+      <h3>Languages</h3>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python">
         <img src="https://skillicons.dev/icons?i=cpp&theme=dark" alt="C++">
@@ -531,17 +513,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       <div class="skill-list-text">Python, C++, JavaScript, TypeScript, SQL, C</div>
     </div>
     <div class="skill-card reveal reveal-delay-1">
-      <div class="skill-ring-wrap">
-        <svg viewBox="0 0 90 90">
-          <circle class="skill-ring-bg" cx="45" cy="45" r="40"/>
-          <circle class="skill-ring-fg" cx="45" cy="45" r="40" data-pct="85"/>
-        </svg>
-        <div class="skill-ring-label">
-          <span class="val" data-pct="85">0%</span>
-          <span class="lbl">Experienced</span>
-        </div>
-      </div>
-      <div class="name">Backend</div>
+      <h3>Backend</h3>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=fastapi&theme=dark" alt="FastAPI">
         <img src="https://skillicons.dev/icons?i=flask&theme=dark" alt="Flask">
@@ -551,17 +523,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       <div class="skill-list-text">FastAPI, Flask, PostgreSQL, Firebase, Supabase</div>
     </div>
     <div class="skill-card reveal reveal-delay-2">
-      <div class="skill-ring-wrap">
-        <svg viewBox="0 0 90 90">
-          <circle class="skill-ring-bg" cx="45" cy="45" r="40"/>
-          <circle class="skill-ring-fg" cx="45" cy="45" r="40" data-pct="80"/>
-        </svg>
-        <div class="skill-ring-label">
-          <span class="val" data-pct="80">0%</span>
-          <span class="lbl">Skilled</span>
-        </div>
-      </div>
-      <div class="name">Frontend & Tools</div>
+      <h3>Frontend &amp; Tools</h3>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React">
         <img src="https://skillicons.dev/icons?i=nextjs&theme=dark" alt="Next.js">
@@ -785,34 +747,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   var statsRow=document.querySelector('.stats-row');
   if(statsRow)counterObserver.observe(statsRow);
 
-  // ── Skill Rings ──
-  var ringsAnimated=false;
-  var ringObserver=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting&&!ringsAnimated){
-        ringsAnimated=true;
-        document.querySelectorAll('.skill-ring-fg').forEach(function(ring){
-          var pct=parseFloat(ring.dataset.pct);
-          var circumference=2*Math.PI*40;
-          var offset=circumference-(pct/100)*circumference;
-          ring.style.setProperty('--offset',offset+'px');
-          ring.classList.add('animated');
-        });
-        document.querySelectorAll('.skill-ring-label .val').forEach(function(val){
-          var target=parseInt(val.dataset.pct);
-          var current=0;
-          var step=Math.max(1,Math.floor(target/35));
-          var interval=setInterval(function(){
-            current+=step;
-            if(current>=target){current=target;clearInterval(interval)}
-            val.textContent=current+'%';
-          },25);
-        });
-      }
-    });
-  },{threshold:0.3});
-  var skillsGrid=document.querySelector('.skills-grid');
-  if(skillsGrid)ringObserver.observe(skillsGrid);
+
 
   // ── Bento Card Glare ──
   document.addEventListener('mousemove',function(e){
