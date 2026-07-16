@@ -477,7 +477,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 <section id="about">
   <div class="section-label reveal">
-    <span class="num">01.</span>
+    <span class="num" data-num="1">00.</span>
     <h2>About</h2>
     <div class="line"></div>
   </div>
@@ -546,7 +546,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 <section id="experience">
   <div class="section-label reveal">
-    <span class="num">02.</span>
+    <span class="num" data-num="2">00.</span>
     <h2>Experience</h2>
     <div class="line"></div>
   </div>
@@ -573,7 +573,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 <section id="skills">
   <div class="section-label reveal">
-    <span class="num">03.</span>
+    <span class="num" data-num="3">00.</span>
     <h2>Skills</h2>
     <div class="line"></div>
   </div>
@@ -616,7 +616,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 <section id="projects">
   <div class="section-label reveal">
-    <span class="num">04.</span>
+    <span class="num" data-num="4">00.</span>
     <h2>Projects</h2>
     <div class="line"></div>
   </div>
@@ -694,7 +694,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 <section id="contact">
   <div class="section-label reveal">
-    <span class="num">05.</span>
+    <span class="num" data-num="5">00.</span>
     <h2>Contact</h2>
     <div class="line"></div>
   </div>
@@ -738,7 +738,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 <section id="terminal">
   <div class="section-label reveal">
-    <span class="num">06.</span>
+    <span class="num" data-num="6">00.</span>
     <h2>Terminal</h2>
     <div class="line"></div>
   </div>
@@ -925,6 +925,25 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   },{threshold:0.5});
   var statsRow=document.querySelector('.stats-row');
   if(statsRow)counterObserver.observe(statsRow);
+
+  // ── Section Number Count-up ──
+  document.querySelectorAll('.section-label .num[data-num]').forEach(function(numEl){
+    var target=parseInt(numEl.dataset.num);
+    var observer=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var current=0;
+          var interval=setInterval(function(){
+            current++;
+            if(current>=target){current=target;clearInterval(interval)}
+            numEl.textContent=(current<10?'0':'')+current+'.';
+          },60);
+          observer.unobserve(e.target);
+        }
+      });
+    },{threshold:0.4});
+    observer.observe(numEl);
+  });
 
 
 
