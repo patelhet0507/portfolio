@@ -929,15 +929,17 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   // ── Section Number Count-up ──
   document.querySelectorAll('.section-label .num[data-num]').forEach(function(numEl){
     var target=parseInt(numEl.dataset.num);
+    var fmt=function(n){return (n<10?'0':'')+n+'.'};
     var observer=new IntersectionObserver(function(entries){
       entries.forEach(function(e){
         if(e.isIntersecting){
-          var current=0;
+          var current=0,dir=1;
           var interval=setInterval(function(){
-            current++;
-            if(current>=target){current=target;clearInterval(interval)}
-            numEl.textContent=(current<10?'0':'')+current+'.';
-          },60);
+            current+=dir;
+            if(current>=target){current=target;dir=-1;}
+            else if(current<=0){current=0;dir=1;}
+            numEl.textContent=fmt(current);
+          },220);
           observer.unobserve(e.target);
         }
       });
