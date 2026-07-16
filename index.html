@@ -368,7 +368,6 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 }
 .form-btn:hover{background:var(--accent-light);box-shadow:0 8px 25px rgba(16,185,129,0.25)}
 .form-btn:disabled{opacity:0.5;cursor:not-allowed}
-.g-recaptcha{transform:scale(0.9);transform-origin:left center;filter:brightness(0.9) contrast(1.1)}
 .form-status{margin-top:12px;font-size:0.85rem;text-align:center;display:none}
 .form-status.success{color:var(--accent-light);display:block}
 .form-status.error{color:#ef4444;display:block}
@@ -854,30 +853,24 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       var status=document.getElementById('form-status');
       btn.disabled=true;btn.textContent='Sending...';
       status.className='form-status';status.style.display='none';
-      grecaptcha.ready(function(){
-        grecaptcha.execute('6Ld-xFYtAAAAAOCweBmEB9TiYhTPIuUqP1GJxquz',{action:'submit'}).then(function(token){
-          var formData=new FormData(contactForm);
-          formData.append('g-recaptcha-response',token);
-          fetch('https://formspree.io/f/xeeyevyb',{
-            method:'POST',
-            body:formData,
-            headers:{'Accept':'application/json'}
-          }).then(function(r){
-            if(r.ok){
-              status.className='form-status success';status.style.display='block';
-              status.textContent='Message sent! I\'ll get back to you soon.';
-              contactForm.reset();
-            }else{
-              status.className='form-status error';status.style.display='block';
-              status.textContent='Something went wrong. Try emailing me directly.';
-            }
-            btn.disabled=false;btn.textContent='Send Message';
-          }).catch(function(){
-            status.className='form-status error';status.style.display='block';
-            status.textContent='Network error. Try emailing me directly.';
-            btn.disabled=false;btn.textContent='Send Message';
-          });
-        });
+      fetch('https://formspree.io/f/xeeyevyb',{
+        method:'POST',
+        body:new FormData(contactForm),
+        headers:{'Accept':'application/json'}
+      }).then(function(r){
+        if(r.ok){
+          status.className='form-status success';status.style.display='block';
+          status.textContent='Message sent! I\'ll get back to you soon.';
+          contactForm.reset();
+        }else{
+          status.className='form-status error';status.style.display='block';
+          status.textContent='Something went wrong. Try emailing me directly.';
+        }
+        btn.disabled=false;btn.textContent='Send Message';
+      }).catch(function(){
+        status.className='form-status error';status.style.display='block';
+        status.textContent='Network error. Try emailing me directly.';
+        btn.disabled=false;btn.textContent='Send Message';
       });
     });
   }
@@ -1040,6 +1033,5 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     });
 })();
 </script>
-<script src="https://www.google.com/recaptcha/api.js?render=6Ld-xFYtAAAAAOCweBmEB9TiYhTPIuUqP1GJxquz" async defer></script>
 </body>
 </html>
