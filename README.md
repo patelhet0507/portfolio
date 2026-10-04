@@ -1,110 +1,112 @@
-# Het Patel — Personal Digital Portfolio
+<p align="center">
+  <img src="assets/banner.svg" alt="Het Patel Portfolio Banner" width="100%" />
+</p>
 
-[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://patelhet0507.github.io/portfolio/)
-[![GitHub](https://img.shields.io/badge/GitHub-patelhet0507-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/patelhet0507)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Het_Patel-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/het-patel-6b2514376)
-[![LeetCode](https://img.shields.io/badge/LeetCode-patelhet0507-ffa116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/patelhet0507)
-
-An award-level personal digital portfolio and interactive developer identity platform. Engineered with precision typography, responsive bento grids, a custom cursor system, an interactive UNIX terminal emulator, and editorial case-study showcases.
-
----
-
-## 📌 Overview
-
-- **Owner:** Het Patel
-- **Academic Program:** Integrated **B.Tech (Computer Science & Applied Mathematics) + M.Tech (Cloud Computing)** at **Adani University**
-- **Specializations:** Full-Stack Web Applications, Backend Architecture, Cloud Infrastructure, System Design, and AI/LLM Inference Tooling.
-- **Location:** Ahmedabad, India
-- **Live Deployment:** [https://patelhet0507.github.io/portfolio/](https://patelhet0507.github.io/portfolio/)
+<p align="center">
+  <a href="https://patelhet0507.github.io/portfolio/"><img src="https://img.shields.io/badge/Live_Portfolio-08090c?style=for-the-badge&logo=vercel&logoColor=10b981" alt="Live Portfolio"></a>
+  <a href="https://github.com/patelhet0507"><img src="https://img.shields.io/badge/GitHub-patelhet0507-08090c?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/het-patel-6b2514376"><img src="https://img.shields.io/badge/LinkedIn-Het_Patel-08090c?style=for-the-badge&logo=linkedin&logoColor=0a66c2" alt="LinkedIn"></a>
+  <a href="https://leetcode.com/u/patelhet0507"><img src="https://img.shields.io/badge/LeetCode-patelhet0507-08090c?style=for-the-badge&logo=leetcode&logoColor=ffa116" alt="LeetCode"></a>
+</p>
 
 ---
 
-## 🛠 Tech Stack & Architecture
+## 01 / ABOUT
 
-This portfolio is built with pure, frameworkless high-performance web standards for maximum rendering speed and accessibility:
+**Het Patel** is an Integrated **B.Tech (Computer Science & Applied Mathematics) + M.Tech (Cloud Computing)** student at **Adani University**, Ahmedabad.
 
-- **Structure:** Semantic HTML5 (`aria-*` compliant, JSON-LD Schema.org structured data)
-- **Styling & Aesthetics:** CSS3 Design Tokens, Custom CSS Grid/Flexbox, Radial Mesh Backgrounds, Glassmorphism
-- **Typography:** Google Fonts — *Syne* (Display Headers), *Plus Jakarta Sans* (Body Copy), *JetBrains Mono* (Technical Telemetry & Terminal)
-- **Interactive Layer:** Vanilla JavaScript (ES6+), IntersectionObserver Reveal Engine, Custom Cursor Pointer System, UNIX Terminal Shell Engine
-- **Forms & Integration:** Formspree AJAX endpoint for direct email transmission
-
----
-
-## 🚀 Key Features
-
-1. **System Initialization Bootloader:** High-tech startup screen initializing telemetry and assets before revealing the UI.
-2. **Flagship Product Case Study (Rentalease):** Detailed interactive showcase of a production SaaS app with dynamic tab switching across Dashboard, Tenant Ledgers, Receivables Aging, and AI Insights.
-3. **Interactive Terminal Emulator:** In-browser UNIX shell supporting custom commands (`help`, `about`, `skills`, `projects`, `experience`, `education`, `rentalease`, `whoami`, `neofetch`, `github`, `contact`, `clear`) with history and auto-scroll.
-4. **Context-Aware Cursor System:** Fluid magnetic pointer ring that expands and shows labels (`EXPLORE`, `FEATURED`, `GAME`, `TERMINAL`) depending on target UI elements.
-5. **Ecosystem Skills Matrix:** Categorized technical stack covering Languages, Frontend, Backend, Databases, Cloud & Infra, and AI Tooling.
-6. **Fully Accessible & Responsive:** Mobile-first navigation, fluid font scaling, zero layout shift, and full `prefers-reduced-motion` support.
+Focus areas include:
+- Backend Systems Engineering
+- Cloud Architecture & Deployments
+- Full-Stack Web Applications
+- System Design & Data Structures
+- Local AI / LLM Workflow Integration
 
 ---
 
-## 💻 Featured Projects
+## 02 / SELECTED WORK
 
-| Project | Type / Category | Core Stack | Live Demo | Repository |
-| :--- | :--- | :--- | :--- | :--- |
-| **Rentalease** | Production SaaS | React, Firebase Auth, Firestore, Vercel | [rentalease.co.in](https://rentalease.co.in) | [Rental-Module](https://github.com/patelhet0507/Rental-Module) |
-| **Kaccho Phool** | Android & Multiplayer Game | Kotlin, Jetpack Compose, Firebase RTDB | [Live Demo](https://kacchooisdaphoolisda.vercel.app/) | [kacchooisdaphoolisda](https://github.com/patelhet0507/kacchooisdaphoolisda) |
-| **TransitOps** | Odoo Hackathon Build | Django, Tailwind CSS, Chart.js, PostgreSQL | [Live Demo](https://odoo-hackathon-wheat.vercel.app/) | [odoo-hackathon](https://github.com/patelhet0507/odoo-hackathon) |
-| **ShopEase** | Full-Stack E-Commerce | React, FastAPI, PostgreSQL, JWT | [Live Demo](https://shop-ease-final.vercel.app/) | [ShopEase_final](https://github.com/patelhet0507/ShopEase_final) |
-| **Local AI Chatbot** | Privacy-First LLM Engine | Python, FastAPI, React, llama.cpp | — | [Local-AI-ChatBot](https://github.com/patelhet0507/Local-AI-ChatBot) |
-
----
-
-## 💼 Professional Experience
-
-- **Python Developer Intern** — *Cognifyz* (Remote, 04 Jun 2026 – 04 Jul 2026)
-  - Python scripting, backend data utilities, and structured development workflows.
-- **Full Stack Developer Intern** — *RatnaBhumi Developers Limited / Ratna Group* (Remote)
-  - Engineered a complete Rental & Property Agreement Management System under mentor Dhaval Moridhara.
-- **Backend Developer Intern** — *Technoville Consultants / Flamingo Group* (Remote, Completed 16 Jul 2026)
-  - Backend API development, database operations, and system maintenance.
+### ✦ Rentalease — Rental & Property Management SaaS
+* **Type:** Flagship Production SaaS Platform
+* **Live App:** [rentalease.co.in](https://rentalease.co.in/)
+* **Repository:** [patelhet0507/Rental-Module](https://github.com/patelhet0507/Rental-Module)
+* **Stack:** React · Firebase Authentication · Firestore · Vercel
+* **Key Features:** Property and tenant directory, lease agreement lifecycle tracking, upcoming renewals, complete accounting module (invoicing, vouchers, ledgers, receivables aging), AI data analytics console, role-based access control.
 
 ---
 
-## 🏆 Achievements & Hackathons
-
-- 🏆 **Adobe University Hackathon** — Round 2 Participant
-- 🏆 **TVS Credit Hackathon** — Round 2 Participant
-- 🏆 **Smart India Hackathon** — Round 2 Application
-- 📜 **Microsoft Generative AI & Agents Certification**
-- ⚡ **Odoo Techfest Participant**
-
----
-
-## 🔧 Local Development & Deployment
-
-To inspect or run this repository locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/patelhet0507/portfolio.git
-
-# Navigate into the project directory
-cd portfolio
-
-# Open index.html in your preferred default web browser
-# On Windows PowerShell:
-Start-Process index.html
-
-# Or serve via standard Python HTTP server:
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000` in your web browser.
+### ✦ Kaccho Phool — Android Multiplayer Card Game
+* **Type:** Android & Multiplayer Game Application
+* **Live App:** [kacchooisdaphoolisda.vercel.app](https://kacchooisdaphoolisda.vercel.app/)
+* **Repository:** [patelhet0507/kacchooisdaphoolisda](https://github.com/patelhet0507/kacchooisdaphoolisda)
+* **Stack:** Kotlin · Jetpack Compose · Firebase RTDB
+* **Team:** Het Patel, Shubham Patel, Milin Patel, Vansh Parmar, Vraj Soni, Rushi Patel, Karma Patel
 
 ---
 
-## 📬 Connect & Contact
-
-- **Email:** [patelhet.0507@gmail.com](mailto:patelhet.0507@gmail.com)
-- **GitHub:** [github.com/patelhet0507](https://github.com/patelhet0507)
-- **LinkedIn:** [linkedin.com/in/het-patel-6b2514376](https://www.linkedin.com/in/het-patel-6b2514376)
-- **LeetCode:** [leetcode.com/u/patelhet0507](https://leetcode.com/u/patelhet0507)
+### ✦ TransitOps — Logistics & Fleet Management
+* **Type:** Odoo Hackathon Build
+* **Live App:** [odoo-hackathon-wheat.vercel.app](https://odoo-hackathon-wheat.vercel.app/)
+* **Repository:** [patelhet0507/odoo-hackathon](https://github.com/patelhet0507/odoo-hackathon)
+* **Stack:** Django · Tailwind CSS · Chart.js · PostgreSQL / SQLite
 
 ---
 
-*© 2026 Het Patel. Built with focus, precision, and passion for software engineering.*
+### ✦ ShopEase — Full-Stack E-Commerce System
+* **Type:** E-Commerce Web Application
+* **Live App:** [shop-ease-final.vercel.app](https://shop-ease-final.vercel.app/)
+* **Repository:** [patelhet0507/ShopEase_final](https://github.com/patelhet0507/ShopEase_final)
+* **Stack:** React · FastAPI · PostgreSQL · JWT
+
+---
+
+### ✦ Local AI Chatbot — Privacy-First LLM Assistant
+* **Type:** Local Model Inference Engine
+* **Repository:** [patelhet0507/Local-AI-ChatBot](https://github.com/patelhet0507/Local-AI-ChatBot)
+* **Stack:** Python · FastAPI · React · llama-cpp-python
+
+---
+
+## 03 / EXPERIENCE
+
+| Organization | Role | Period / Status | Details |
+| :--- | :--- | :--- | :--- |
+| **Cognifyz** | Python Developer Intern | Remote · 04 Jun 2026 – 04 Jul 2026 | Python scripting and backend utility development. |
+| **RatnaBhumi Developers / Ratna Group** | Full Stack Developer Intern | Remote | Built Rental & Property Agreement Management System. Mentor: Dhaval Moridhara. |
+| **Technoville Consultants / Flamingo Group** | Backend Developer Intern | Remote · Completed 16 Jul 2026 | Backend operations, API services, database management. |
+
+---
+
+## 04 / TECHNOLOGIES
+
+* **Languages:** Python · C++ · C · JavaScript · TypeScript · SQL
+* **Frontend:** React · Next.js · HTML5 / CSS3 · Tailwind CSS
+* **Backend:** FastAPI · Django · Flask · REST APIs · JWT
+* **Databases:** PostgreSQL · Firestore · Firebase RTDB · SQLite
+* **Cloud & Tools:** Docker · Vercel · Git · GitHub · llama.cpp
+
+---
+
+## 05 / ACHIEVEMENTS
+
+- Adobe University Hackathon — Round 2 Participation
+- TVS Credit Hackathon — Round 2 Participation
+- Smart India Hackathon — Round 2 Application
+- Microsoft Generative AI & Agents Certification
+- Odoo Techfest Participation
+
+---
+
+## 06 / CONNECT
+
+* **Email:** [patelhet.0507@gmail.com](mailto:patelhet.0507@gmail.com)
+* **GitHub:** [github.com/patelhet0507](https://github.com/patelhet0507)
+* **LinkedIn:** [linkedin.com/in/het-patel-6b2514376](https://www.linkedin.com/in/het-patel-6b2514376)
+* **LeetCode:** [leetcode.com/u/patelhet0507](https://leetcode.com/u/patelhet0507)
+
+---
+
+**HET PATEL**  
+Building software.  
+Learning systems.  
+Exploring what's next.  

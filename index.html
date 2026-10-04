@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Het Patel — Full-Stack Developer & Systems Engineer</title>
-  
-  <meta name="description" content="Personal digital portfolio of Het Patel — Integrated B.Tech in CS & AM + M.Tech in Cloud Computing at Adani University. Specialist in full-stack engineering, cloud architecture, backend systems, and AI tooling.">
-  <meta name="keywords" content="Het Patel, Full Stack Developer, Cloud Computing, Backend Engineer, System Design, AI LLM, Adani University, Portfolio, Rentalease">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal digital portfolio of Het Patel — Integrated B.Tech in CS & AM + M.Tech in Cloud Computing student at Adani University. Specialized in backend engineering, cloud computing, system design, and AI tooling.">
+  <meta name="keywords" content="Het Patel, Full-Stack Developer, Cloud Computing, Backend Engineer, System Design, Adani University, Rentalease">
   <meta name="author" content="Het Patel">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://patelhet0507.github.io/portfolio/">
 
-  <!-- Open Graph / Social Media -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Het Patel — Full-Stack Developer & Systems Engineer">
-  <meta property="og:description" content="Explore selected work, full-stack SaaS applications, backend systems, and interactive terminal by Het Patel.">
+  <meta property="og:description" content="Portfolio of Het Patel featuring Rentalease SaaS, backend architecture, cloud engineering, and interactive terminal.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://patelhet0507.github.io/portfolio/">
   <meta property="og:site_name" content="Het Patel Portfolio">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Het Patel — Full-Stack Developer Portfolio">
+  <meta name="twitter:title" content="Het Patel — Developer Portfolio">
   <meta name="twitter:description" content="Integrated B.Tech CS & AM + M.Tech Cloud Computing student at Adani University. Projects, backend systems, and interactive terminal.">
 
-  <!-- Google Fonts: Syne (Display), Plus Jakarta Sans (Body), JetBrains Mono (Tech) -->
+  <!-- Typography: Syne (Display), Inter (Body), JetBrains Mono (Technical) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Schema.org Structured Data -->
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,58 +41,43 @@
       "https://www.linkedin.com/in/het-patel-6b2514376",
       "https://leetcode.com/u/patelhet0507"
     ],
-    "jobTitle": "Full-Stack Developer & Cloud Systems Engineer",
+    "jobTitle": "Full-Stack Developer & Cloud Systems Student",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "Adani University"
     },
-    "knowsAbout": [
-      "Full-Stack Web Development",
-      "Cloud Architecture",
-      "Backend System Design",
-      "FastAPI & React",
-      "Firebase & Firestore",
-      "AI / LLM Tooling"
-    ]
+    "knowsAbout": ["Full-Stack Web Development", "Cloud Computing", "Backend Architecture", "System Design", "FastAPI", "React", "Firebase"]
   }
   </script>
 
   <style>
     /* ==========================================================================
-       01. DESIGN SYSTEM & TOKENS
+       01. DESIGN SYSTEM & TOKENS (Editorial, Minimal, Technical)
        ========================================================================== */
     :root {
-      --bg-dark: #030509;
-      --bg-surface: #0a0e17;
-      --bg-surface-elevated: #111726;
-      --bg-surface-card: rgba(15, 23, 42, 0.65);
-      
-      --accent-emerald: #10b981;
-      --accent-emerald-bright: #00f5a0;
-      --accent-cyan: #06b6d4;
-      --accent-sky: #38bdf8;
-      --accent-indigo: #6366f1;
-      
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-strong: rgba(16, 185, 129, 0.25);
-      --border-glow: rgba(56, 189, 248, 0.35);
+      --bg: #08090c;
+      --surface: #0e1017;
+      --surface-elevated: #141722;
+      --surface-border: rgba(255, 255, 255, 0.08);
+      --surface-border-strong: rgba(255, 255, 255, 0.16);
 
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
-      
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+
+      --accent: #10b981;
+      --accent-soft: rgba(16, 185, 129, 0.12);
+      --accent-border: rgba(16, 185, 129, 0.3);
+
       --font-display: "Syne", sans-serif;
-      --font-body: "Plus Jakarta Sans", sans-serif;
+      --font-body: "Inter", sans-serif;
       --font-mono: "JetBrains Mono", monospace;
-      
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 24px;
-      --radius-pill: 9999px;
-      
-      --transition-fast: 200ms cubic-bezier(0.16, 1, 0.3, 1);
-      --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
-      --transition-slow: 700ms cubic-bezier(0.16, 1, 0.3, 1);
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+
+      --transition: 250ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     *, *::before, *::after {
@@ -102,466 +88,231 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 100px;
-      background-color: var(--bg-dark);
+      scroll-padding-top: 90px;
+      background-color: var(--bg);
       color: var(--text-muted);
       font-family: var(--font-body);
       font-size: 16px;
-      overflow-x: hidden;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
 
     body {
       min-height: 100vh;
-      line-height: 1.6;
-      background: 
-        radial-gradient(circle at 10% 0%, rgba(16, 185, 129, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 90% 40%, rgba(6, 182, 212, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 50% 80%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
-        var(--bg-dark);
-      background-attachment: fixed;
+      overflow-x: hidden;
+      background: var(--bg);
     }
 
     ::selection {
-      background: var(--accent-emerald);
+      background: var(--accent);
       color: #000;
     }
 
-    /* Accessibility focus */
     :focus-visible {
-      outline: 2px solid var(--accent-emerald-bright);
-      outline-offset: 4px;
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
     }
 
     .skip-link {
       position: absolute;
       top: -60px;
       left: 16px;
-      background: var(--accent-emerald);
+      background: var(--accent);
       color: #000;
       font-weight: 700;
-      padding: 10px 18px;
+      padding: 8px 16px;
       border-radius: var(--radius-sm);
       z-index: 10000;
-      transition: top var(--transition-fast);
+      transition: top var(--transition);
       text-decoration: none;
     }
     .skip-link:focus {
       top: 16px;
     }
 
-    /* ==========================================================================
-       02. BACKGROUND GRID & AMBIENT EFFECTS
-       ========================================================================== */
-    .bg-grid-overlay {
-      position: fixed;
-      inset: 0;
-      background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-      background-size: 64px 64px;
-      pointer-events: none;
-      z-index: 0;
-      mask-image: radial-gradient(circle at 50% 30%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 80%);
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 28px;
     }
 
-    .scroll-progress-bar {
+    /* Scroll Progress Indicator */
+    .scroll-progress {
       position: fixed;
       top: 0;
       left: 0;
-      height: 3px;
+      height: 2px;
       width: 0%;
-      background: linear-gradient(90deg, var(--accent-emerald-bright), var(--accent-cyan), var(--accent-indigo));
+      background: var(--accent);
       z-index: 9999;
-      box-shadow: 0 0 12px var(--accent-emerald);
       transition: width 100ms linear;
     }
 
     /* ==========================================================================
-       03. CUSTOM CURSOR
-       ========================================================================== */
-    .custom-cursor-dot {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 6px;
-      height: 6px;
-      background-color: var(--accent-emerald-bright);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 99999;
-      transform: translate(-50%, -50%);
-      transition: transform 50ms linear;
-    }
-
-    .custom-cursor-ring {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 36px;
-      height: 36px;
-      border: 1px solid rgba(52, 211, 153, 0.4);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 99998;
-      transform: translate(-50%, -50%);
-      transition: width 200ms ease, height 200ms ease, border-color 200ms ease, background 200ms ease;
-    }
-
-    .custom-cursor-label {
-      position: fixed;
-      pointer-events: none;
-      z-index: 99999;
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      color: #000;
-      background: var(--accent-emerald-bright);
-      padding: 3px 8px;
-      border-radius: 4px;
-      transform: translate(18px, 18px);
-      opacity: 0;
-      transition: opacity 200ms ease;
-      white-space: nowrap;
-    }
-
-    body.hovering-link .custom-cursor-ring {
-      width: 52px;
-      height: 52px;
-      border-color: var(--accent-emerald-bright);
-      background: rgba(16, 185, 129, 0.08);
-    }
-
-    body.hovering-project .custom-cursor-ring {
-      width: 68px;
-      height: 68px;
-      border-color: var(--accent-cyan);
-      background: rgba(6, 182, 212, 0.12);
-    }
-    body.hovering-project .custom-cursor-label {
-      opacity: 1;
-    }
-
-    @media (hover: none) or (pointer: coarse) {
-      .custom-cursor-dot, .custom-cursor-ring, .custom-cursor-label {
-        display: none !important;
-      }
-    }
-
-    /* ==========================================================================
-       04. SYSTEM INITIALIZATION LOADER
-       ========================================================================== */
-    #system-loader {
-      position: fixed;
-      inset: 0;
-      background: #030509;
-      z-index: 99990;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      font-family: var(--font-mono);
-      transition: opacity 500ms ease, visibility 500ms ease;
-    }
-
-    #system-loader.loaded {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .loader-box {
-      width: 100%;
-      max-width: 440px;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      background: rgba(10, 14, 23, 0.9);
-      padding: 24px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    }
-
-    .loader-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 12px;
-      margin-bottom: 16px;
-      font-size: 0.75rem;
-      color: var(--text-dim);
-    }
-
-    .loader-brand {
-      color: var(--text-main);
-      font-weight: 700;
-    }
-    .loader-brand span {
-      color: var(--accent-emerald-bright);
-    }
-
-    .loader-log {
-      font-size: 0.8rem;
-      color: var(--accent-emerald-bright);
-      min-height: 2.4em;
-      margin-bottom: 16px;
-    }
-
-    .loader-progress-track {
-      height: 4px;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 99px;
-      overflow: hidden;
-      margin-bottom: 12px;
-    }
-
-    .loader-progress-fill {
-      height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, var(--accent-emerald), var(--accent-cyan));
-      transition: width 150ms ease;
-    }
-
-    .loader-footer {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.72rem;
-      color: var(--text-dim);
-    }
-
-    /* ==========================================================================
-       05. STICKY EDITORIAL NAVIGATION
+       02. EDITORIAL NAVIGATION
        ========================================================================== */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      background: rgba(3, 5, 9, 0.75);
-      border-bottom: 1px solid transparent;
-      transition: border-color var(--transition-smooth), background var(--transition-smooth);
+      background: rgba(8, 9, 12, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--surface-border);
+      transition: border-color var(--transition);
     }
 
-    .site-header.scrolled {
-      border-color: var(--border-subtle);
-      background: rgba(3, 5, 9, 0.92);
-    }
-
-    .nav-container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 28px;
-      height: 76px;
+    .nav-wrap {
+      height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
     }
 
-    .brand-logo {
+    .brand {
       font-family: var(--font-display);
       font-weight: 800;
-      font-size: 1.25rem;
-      letter-spacing: -0.03em;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
       color: var(--text-main);
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
-    .brand-logo span {
-      color: var(--accent-emerald-bright);
-    }
-
-    .status-dot-inline {
-      width: 7px;
-      height: 7px;
+    .brand-status-dot {
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      background-color: var(--accent-emerald-bright);
-      box-shadow: 0 0 8px var(--accent-emerald-bright);
-      animation: pulse-dot 2s infinite;
+      background-color: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
     }
 
-    @keyframes pulse-dot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
-    }
-
-    .nav-menu {
+    .nav-links {
       display: flex;
       align-items: center;
-      gap: 4px;
-      background: rgba(15, 23, 42, 0.6);
-      border: 1px solid var(--border-subtle);
-      padding: 4px;
-      border-radius: var(--radius-pill);
+      gap: 24px;
     }
 
     .nav-link {
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-dim);
       text-decoration: none;
-      padding: 8px 16px;
-      border-radius: var(--radius-pill);
-      transition: color var(--transition-fast), background var(--transition-fast);
+      transition: color var(--transition);
     }
 
     .nav-link:hover, .nav-link.active {
       color: var(--text-main);
-      background: rgba(255, 255, 255, 0.08);
     }
 
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .nav-link span {
+      color: var(--accent);
+      margin-right: 4px;
     }
 
-    .btn-terminal-toggle {
+    .nav-cta {
       font-family: var(--font-mono);
-      font-size: 0.78rem;
+      font-size: 0.82rem;
       font-weight: 600;
-      color: var(--accent-emerald-bright);
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid var(--border-strong);
-      padding: 8px 14px;
-      border-radius: var(--radius-pill);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: background var(--transition-fast), transform var(--transition-fast);
-    }
-    .btn-terminal-toggle:hover {
-      background: rgba(16, 185, 129, 0.2);
-      transform: translateY(-1px);
-    }
-
-    .btn-nav-cta {
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #000;
-      background: linear-gradient(135deg, var(--accent-emerald-bright), var(--accent-emerald));
-      padding: 9px 20px;
-      border-radius: var(--radius-pill);
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      padding: 7px 16px;
+      border-radius: var(--radius-sm);
       text-decoration: none;
-      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      transition: background var(--transition), color var(--transition);
     }
-    .btn-nav-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(16, 185, 129, 0.5);
+    .nav-cta:hover {
+      background: var(--accent);
+      color: #000;
     }
 
-    .mobile-menu-btn {
+    .mobile-btn {
       display: none;
-      background: rgba(15, 23, 42, 0.8);
-      border: 1px solid var(--border-subtle);
+      background: transparent;
+      border: 1px solid var(--surface-border);
       color: var(--text-main);
-      width: 42px;
-      height: 42px;
+      width: 38px;
+      height: 38px;
       border-radius: var(--radius-sm);
       cursor: pointer;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     /* ==========================================================================
-       06. HERO SECTION — UNFORGETTABLE OPENING
+       03. HERO SECTION — EDITORIAL & MINIMAL
        ========================================================================== */
     .hero-section {
-      position: relative;
-      min-height: calc(100vh - 76px);
-      padding: 60px 0 100px;
-      display: flex;
-      align-items: center;
-      z-index: 1;
+      padding: 100px 0 120px;
+      border-bottom: 1px solid var(--surface-border);
     }
 
-    .container {
-      width: 100%;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 28px;
-    }
-
-    .hero-grid {
+    .hero-editorial-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
-      align-items: center;
+      gap: 60px;
+      align-items: flex-start;
     }
 
-    .hero-badge-row {
+    .hero-meta-strip {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 24px;
+      gap: 16px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      margin-bottom: 28px;
       flex-wrap: wrap;
     }
 
-    .live-status-pill {
+    .status-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      padding: 4px 12px;
+      border-radius: 99px;
       font-weight: 600;
-      color: var(--accent-emerald-bright);
-      background: rgba(16, 185, 129, 0.08);
-      border: 1px solid var(--border-strong);
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
-    }
-
-    .location-pill {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-dim);
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border-subtle);
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
     }
 
     .hero-title {
       font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5vw, 4.8rem);
       font-weight: 800;
-      font-size: clamp(2.6rem, 5vw, 4.8rem);
       line-height: 1.05;
       letter-spacing: -0.04em;
       color: var(--text-main);
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
-    .hero-title .gradient-text {
-      background: linear-gradient(135deg, #ffffff 0%, var(--accent-emerald-bright) 50%, var(--accent-cyan) 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+    .hero-title em {
+      font-style: normal;
+      color: var(--text-dim);
     }
 
-    .hero-subtitle {
-      font-size: clamp(1.05rem, 1.3vw, 1.25rem);
+    .hero-lead {
+      font-size: 1.15rem;
       color: var(--text-muted);
       line-height: 1.65;
-      margin-bottom: 36px;
-      max-width: 620px;
+      margin-bottom: 40px;
+      max-width: 640px;
     }
 
-    .hero-subtitle strong {
+    .hero-lead strong {
       color: var(--text-main);
       font-weight: 600;
     }
 
-    .hero-cta-group {
+    .hero-actions {
       display: flex;
       align-items: center;
       gap: 16px;
@@ -569,711 +320,511 @@
       margin-bottom: 40px;
     }
 
-    .btn-primary {
+    .btn {
       font-family: var(--font-body);
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #000;
-      background: linear-gradient(135deg, var(--accent-emerald-bright), var(--accent-emerald));
-      padding: 14px 28px;
-      border-radius: var(--radius-pill);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.35);
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-    }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 40px rgba(16, 185, 129, 0.5);
-    }
-
-    .btn-secondary {
-      font-family: var(--font-body);
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      color: var(--text-main);
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid var(--border-subtle);
-      padding: 14px 28px;
-      border-radius: var(--radius-pill);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      transition: border-color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
-    }
-    .btn-secondary:hover {
-      border-color: var(--border-strong);
-      background: rgba(15, 23, 42, 0.9);
-      transform: translateY(-2px);
+      transition: background var(--transition), color var(--transition), border-color var(--transition);
+      cursor: pointer;
     }
 
-    .hero-social-strip {
+    .btn-primary {
+      background: var(--text-main);
+      color: #000;
+      border: 1px solid var(--text-main);
+    }
+    .btn-primary:hover {
+      background: #ffffff;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--surface-border-strong);
+    }
+    .btn-secondary:hover {
+      border-color: var(--text-main);
+    }
+
+    .social-links {
       display: flex;
-      align-items: center;
       gap: 20px;
       font-family: var(--font-mono);
       font-size: 0.82rem;
     }
 
-    .hero-social-strip a {
+    .social-links a {
       color: var(--text-dim);
       text-decoration: none;
-      transition: color var(--transition-fast);
+      transition: color var(--transition);
     }
-    .hero-social-strip a:hover {
-      color: var(--accent-emerald-bright);
-    }
-
-    /* Hero Side Telemetry Card */
-    .hero-telemetry-card {
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      background: linear-gradient(165deg, rgba(15, 23, 42, 0.8), rgba(10, 14, 23, 0.9));
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
-      overflow: hidden;
-      position: relative;
+    .social-links a:hover {
+      color: var(--accent);
     }
 
-    .hero-telemetry-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--accent-emerald-bright), transparent);
+    /* Hero Technical Metadata Card */
+    .hero-tech-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 28px;
     }
 
-    .card-topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 20px;
-      background: rgba(3, 5, 9, 0.6);
-      border-bottom: 1px solid var(--border-subtle);
+    .tech-card-header {
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-dim);
-    }
-
-    .card-body {
-      padding: 24px;
-    }
-
-    .telemetry-meta-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+      border-bottom: 1px solid var(--surface-border);
+      padding-bottom: 12px;
       margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
     }
 
-    .meta-box {
-      background: rgba(10, 14, 23, 0.6);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 14px;
+    .meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
-    .meta-box-label {
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .meta-label {
       font-family: var(--font-mono);
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       color: var(--text-dim);
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      margin-bottom: 4px;
     }
 
-    .meta-box-value {
-      font-size: 0.9rem;
-      font-weight: 700;
+    .meta-val {
+      font-size: 0.95rem;
       color: var(--text-main);
-    }
-
-    .hero-featured-spotlight {
-      background: rgba(16, 185, 129, 0.05);
-      border: 1px solid var(--border-strong);
-      border-radius: var(--radius-md);
-      padding: 18px;
-    }
-
-    .spotlight-tag {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--accent-emerald-bright);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-    }
-
-    .spotlight-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 6px;
-    }
-
-    .spotlight-desc {
-      font-size: 0.85rem;
-      color: var(--text-muted);
+      font-weight: 500;
     }
 
     /* ==========================================================================
-       07. SECTION HEADERS & EDITORIAL LAYOUT
+       04. SECTION HEADERS & GENERAL LAYOUT
        ========================================================================== */
     section {
-      padding: 110px 0;
-      position: relative;
-      z-index: 1;
+      padding: 100px 0;
     }
 
     .section-header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-bottom: 60px;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 24px;
-    }
-
-    .section-title-wrap {
+      margin-bottom: 48px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 8px;
     }
 
-    .section-number {
+    .section-num {
       font-family: var(--font-mono);
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--accent-emerald-bright);
-      letter-spacing: 0.1em;
+      font-size: 0.8rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
     }
 
     .section-title {
       font-family: var(--font-display);
-      font-size: clamp(2rem, 3.5vw, 3.2rem);
+      font-size: clamp(2rem, 3.2vw, 3rem);
       font-weight: 800;
       color: var(--text-main);
       letter-spacing: -0.03em;
-      line-height: 1.1;
     }
 
-    .section-subtitle {
-      font-size: 0.95rem;
+    .section-desc {
+      font-size: 1rem;
       color: var(--text-dim);
-      max-width: 480px;
+      max-width: 540px;
     }
 
     /* ==========================================================================
-       08. ABOUT & PERSONAL SIGNAL BENTO
+       05. EDITORIAL ABOUT SECTION
        ========================================================================== */
-    .about-bento-grid {
+    .about-grid {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
-      gap: 24px;
+      gap: 48px;
     }
 
-    .bento-card {
-      background: var(--bg-surface-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      position: relative;
-      overflow: hidden;
-      transition: border-color var(--transition-smooth), transform var(--transition-smooth);
-    }
-
-    .bento-card:hover {
-      border-color: var(--border-strong);
-      transform: translateY(-3px);
-    }
-
-    .bento-card-title {
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 16px;
-    }
-
-    .bento-card-text {
-      font-size: 1rem;
+    .about-narrative p {
+      font-size: 1.1rem;
       color: var(--text-muted);
       line-height: 1.7;
       margin-bottom: 24px;
     }
 
-    .chip-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tech-chip {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--accent-emerald-bright);
-      background: rgba(16, 185, 129, 0.08);
-      border: 1px solid rgba(16, 185, 129, 0.2);
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
-    }
-
-    .education-bento-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .edu-item {
-      background: rgba(10, 14, 23, 0.6);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 20px;
-    }
-
-    .edu-degree {
-      font-size: 1rem;
-      font-weight: 700;
+    .about-narrative strong {
       color: var(--text-main);
-      margin-bottom: 4px;
     }
 
-    .edu-school {
-      font-size: 0.85rem;
-      color: var(--accent-cyan);
-      margin-bottom: 8px;
+    .focus-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 32px;
     }
 
-    .edu-desc {
+    .focus-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      padding: 20px;
+      border-radius: var(--radius-sm);
+    }
+
+    .focus-title {
+      font-family: var(--font-mono);
       font-size: 0.85rem;
-      color: var(--text-muted);
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .focus-desc {
+      font-size: 0.85rem;
+      color: var(--text-dim);
     }
 
     /* ==========================================================================
-       09. FEATURED CASE STUDY — RENTALEASE (HERO PRODUCT)
+       06. FEATURED CASE STUDY — RENTALEASE
        ========================================================================== */
-    .hero-project-wrapper {
-      background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(10, 14, 23, 0.95) 100%);
-      border: 1px solid var(--border-strong);
+    .rentalease-hero-box {
+      background: var(--surface);
+      border: 1px solid var(--surface-border-strong);
       border-radius: var(--radius-lg);
       overflow: hidden;
-      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8);
-      margin-bottom: 48px;
+      margin-bottom: 60px;
     }
 
-    .project-hero-header {
-      padding: 40px;
-      border-bottom: 1px solid var(--border-subtle);
+    .rentalease-inner {
+      padding: 44px;
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
-      gap: 32px;
+      gap: 40px;
       align-items: center;
+      border-bottom: 1px solid var(--surface-border);
     }
 
-    .project-type-badge {
+    .project-kicker {
       font-family: var(--font-mono);
       font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--accent-emerald-bright);
+      color: var(--accent);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       margin-bottom: 12px;
     }
 
     .project-hero-title {
       font-family: var(--font-display);
-      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+      font-size: 2.5rem;
       font-weight: 800;
       color: var(--text-main);
-      line-height: 1.1;
       margin-bottom: 16px;
+      letter-spacing: -0.03em;
     }
 
-    .project-hero-subtitle {
+    .project-hero-desc {
       font-size: 1.05rem;
       color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 24px;
+      line-height: 1.65;
+      margin-bottom: 28px;
     }
 
-    .project-action-btns {
+    .project-actions {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
     }
 
-    /* Interactive Tab Switcher inside Case Study */
-    .project-tabs-container {
-      padding: 30px 40px;
-      background: rgba(3, 5, 9, 0.5);
+    /* Interactive Feature Tabs inside Case Study */
+    .case-study-interactive {
+      padding: 32px 44px;
+      background: rgba(14, 16, 23, 0.5);
     }
 
-    .tab-buttons-row {
+    .tab-bar {
       display: flex;
-      gap: 12px;
-      border-bottom: 1px solid var(--border-subtle);
+      gap: 10px;
+      border-bottom: 1px solid var(--surface-border);
       padding-bottom: 16px;
       margin-bottom: 24px;
       overflow-x: auto;
     }
 
-    .tab-btn {
+    .tab-item {
       font-family: var(--font-mono);
-      font-size: 0.82rem;
-      font-weight: 600;
+      font-size: 0.8rem;
       color: var(--text-dim);
       background: transparent;
       border: 1px solid transparent;
-      padding: 8px 18px;
-      border-radius: var(--radius-pill);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
       cursor: pointer;
       white-space: nowrap;
-      transition: color var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+      transition: color var(--transition), border-color var(--transition);
     }
 
-    .tab-btn:hover {
-      color: var(--text-main);
+    .tab-item.active {
+      color: var(--accent);
+      border-color: var(--accent-border);
+      background: var(--accent-soft);
     }
 
-    .tab-btn.active {
-      color: var(--accent-emerald-bright);
-      background: rgba(16, 185, 129, 0.1);
-      border-color: var(--border-strong);
-    }
-
-    .mockup-display-area {
-      background: #070a12;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      min-height: 380px;
-    }
-
-    .mockup-view-pane {
+    .tab-content-pane {
       display: none;
-      animation: fadeInPane 300ms ease;
+      background: #06070a;
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      padding: 24px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
     }
-    .mockup-view-pane.active {
+    .tab-content-pane.active {
       display: block;
     }
 
-    @keyframes fadeInPane {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Custom SVG/CSS Mockup Screens for Rentalease */
-    .screen-header-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(15, 23, 42, 0.8);
-      padding: 12px 18px;
-      border-radius: var(--radius-sm);
-      margin-bottom: 20px;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    .screen-stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-
-    .screen-stat-card {
-      background: rgba(15, 23, 42, 0.5);
-      border: 1px solid var(--border-subtle);
-      padding: 16px;
-      border-radius: var(--radius-sm);
-    }
-
-    .screen-stat-label {
-      font-size: 0.72rem;
-      color: var(--text-dim);
-      text-transform: uppercase;
-      margin-bottom: 4px;
-    }
-
-    .screen-stat-num {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .screen-table-preview {
+    .mockup-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.85rem;
+      margin-top: 12px;
     }
-
-    .screen-table-preview th {
-      text-align: left;
+    .mockup-table th, .mockup-table td {
       padding: 10px;
-      border-bottom: 1px solid var(--border-subtle);
-      color: var(--text-dim);
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--surface-border);
     }
-
-    .screen-table-preview td {
-      padding: 12px 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-      color: var(--text-muted);
+    .mockup-table th {
+      color: var(--text-dim);
+      font-size: 0.75rem;
     }
 
     /* ==========================================================================
-       10. OTHER PROJECTS GRID
+       07. OTHER PROJECTS SHOWCASE
        ========================================================================== */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
+    .projects-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
     }
 
     .project-card {
-      background: var(--bg-surface-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: border-color var(--transition-smooth), transform var(--transition-smooth);
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1fr 0.4fr;
+      gap: 32px;
+      align-items: center;
+      transition: border-color var(--transition);
     }
 
     .project-card:hover {
-      border-color: var(--border-strong);
-      transform: translateY(-4px);
-    }
-
-    .project-card-type {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--accent-cyan);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
+      border-color: var(--surface-border-strong);
     }
 
     .project-card-title {
       font-family: var(--font-display);
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 700;
       color: var(--text-main);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .project-card-desc {
-      font-size: 0.95rem;
+      font-size: 0.98rem;
       color: var(--text-muted);
+      margin-bottom: 20px;
       line-height: 1.6;
-      margin-bottom: 24px;
     }
 
-    .project-card-meta {
-      border-top: 1px solid var(--border-subtle);
-      padding-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .stack-tags {
+    .tag-row {
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
     }
 
-    .stack-tag {
+    .tag {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-size: 0.75rem;
       color: var(--text-dim);
       background: rgba(255, 255, 255, 0.04);
       padding: 4px 10px;
       border-radius: 4px;
     }
 
-    .project-links-row {
+    .project-card-links {
       display: flex;
+      flex-direction: column;
+      align-items: flex-end;
       gap: 12px;
     }
 
-    .project-icon-link {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
+    .project-link-btn {
       font-family: var(--font-mono);
-      transition: color var(--transition-fast);
+      font-size: 0.82rem;
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color var(--transition);
     }
-    .project-icon-link:hover {
-      color: var(--accent-emerald-bright);
+    .project-link-btn:hover {
+      color: var(--accent);
     }
 
     /* ==========================================================================
-       11. EXPERIENCE TIMELINE
+       08. EXPERIENCE TIMELINE
        ========================================================================== */
-    .timeline-container {
+    .timeline {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 20px;
     }
 
-    .timeline-card {
-      background: var(--bg-surface-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      position: relative;
-      transition: border-color var(--transition-smooth);
+    .timeline-item {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 28px;
     }
 
-    .timeline-card:hover {
-      border-color: var(--border-strong);
-    }
-
-    .timeline-header {
+    .timeline-top {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
     }
 
-    .role-title {
+    .role-name {
       font-family: var(--font-display);
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: var(--text-main);
     }
 
-    .company-name {
+    .company {
       font-size: 0.95rem;
-      color: var(--accent-emerald-bright);
+      color: var(--accent);
     }
 
-    .timeline-date {
+    .date-badge {
       font-family: var(--font-mono);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--text-dim);
       background: rgba(255, 255, 255, 0.04);
-      padding: 4px 12px;
-      border-radius: var(--radius-pill);
-    }
-
-    .timeline-desc {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.6;
+      padding: 4px 10px;
+      border-radius: 4px;
     }
 
     /* ==========================================================================
-       12. TECHNICAL ECOSYSTEM & SKILLS
+       09. TECHNICAL MATRIX & ACHIEVEMENTS
        ========================================================================== */
-    .skills-matrix-grid {
+    .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
 
-    .skill-category-card {
-      background: var(--bg-surface-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 28px;
+    .skill-box {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
     }
 
-    .skill-category-title {
+    .skill-box-cat {
       font-family: var(--font-mono);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--text-dim);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 16px;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
     }
 
-    .skill-pills-list {
+    .skill-list-inline {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
     }
 
-    .skill-pill {
+    .skill-item {
       font-family: var(--font-mono);
       font-size: 0.8rem;
       color: var(--text-main);
-      background: rgba(10, 14, 23, 0.8);
-      border: 1px solid var(--border-subtle);
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      transition: border-color var(--transition-fast), transform var(--transition-fast);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--surface-border);
+      padding: 6px 12px;
+      border-radius: 4px;
     }
 
-    .skill-pill:hover {
-      border-color: var(--accent-emerald-bright);
-      transform: translateY(-1px);
+    .achievements-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .achievement-item {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
     }
 
     /* ==========================================================================
-       13. INTERACTIVE TERMINAL EMULATOR
+       10. INTERACTIVE TERMINAL
        ========================================================================== */
-    .terminal-window {
-      background: #020408;
-      border: 1px solid var(--border-strong);
-      border-radius: var(--radius-lg);
-      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9);
+    .terminal-container {
+      background: #040508;
+      border: 1px solid var(--surface-border-strong);
+      border-radius: var(--radius-md);
       overflow: hidden;
       font-family: var(--font-mono);
     }
 
-    .terminal-topbar {
-      background: rgba(15, 23, 42, 0.9);
+    .terminal-bar {
+      background: var(--surface);
       padding: 12px 18px;
+      border-bottom: 1px solid var(--surface-border);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .terminal-dots {
-      display: flex;
-      gap: 8px;
-    }
-
-    .term-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-    }
-    .term-dot.close { background: #ef4444; }
-    .term-dot.min { background: #eab308; }
-    .term-dot.max { background: #22c55e; }
-
-    .terminal-title-text {
       font-size: 0.75rem;
       color: var(--text-dim);
     }
 
-    .terminal-body-area {
+    .term-dots {
+      display: flex;
+      gap: 6px;
+    }
+    .term-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .term-dot.r { background: #ef4444; }
+    .term-dot.y { background: #f59e0b; }
+    .term-dot.g { background: #10b981; }
+
+    .terminal-body {
       padding: 24px;
-      min-height: 320px;
-      max-height: 440px;
+      min-height: 300px;
+      max-height: 400px;
       overflow-y: auto;
       font-size: 0.88rem;
-      color: #7ee4bb;
-      line-height: 1.7;
+      color: var(--accent);
+      line-height: 1.6;
     }
 
-    .term-output-history {
+    .term-output {
       white-space: pre-wrap;
       margin-bottom: 12px;
     }
@@ -1281,15 +832,15 @@
     .term-input-row {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
-    .term-prompt-label {
-      color: var(--accent-cyan);
+    .term-prompt {
+      color: var(--text-dim);
       user-select: none;
     }
 
-    .term-cmd-input {
+    .term-input {
       flex: 1;
       background: transparent;
       border: none;
@@ -1300,115 +851,65 @@
     }
 
     /* ==========================================================================
-       14. ACHIEVEMENTS & CONTACT
+       11. CONTACT & FOOTER
        ========================================================================== */
-    .achievements-grid {
+    .contact-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-bottom: 80px;
-    }
-
-    .achievement-card {
-      background: var(--bg-surface-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    .contact-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 48px;
     }
 
-    .contact-editorial-title {
+    .contact-title {
       font-family: var(--font-display);
-      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-size: 2.8rem;
       font-weight: 800;
       color: var(--text-main);
       line-height: 1.1;
       margin-bottom: 20px;
     }
 
-    .contact-info-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 32px;
+    .contact-form {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 32px;
     }
 
-    .contact-info-item {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .contact-label {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--text-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .contact-value a {
-      color: var(--accent-emerald-bright);
-      text-decoration: none;
-      font-size: 1.05rem;
-      font-weight: 600;
-    }
-
-    .contact-form-card {
-      background: var(--bg-surface-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 36px;
-    }
-
-    .form-group {
+    .form-field {
       margin-bottom: 20px;
     }
 
-    .form-label {
+    .form-field label {
       display: block;
       font-family: var(--font-mono);
       font-size: 0.78rem;
-      color: var(--text-muted);
+      color: var(--text-dim);
       margin-bottom: 8px;
     }
 
-    .form-control {
+    .form-field input, .form-field textarea {
       width: 100%;
-      background: rgba(10, 14, 23, 0.8);
-      border: 1px solid var(--border-subtle);
+      background: #040508;
+      border: 1px solid var(--surface-border);
       border-radius: var(--radius-sm);
-      padding: 12px 16px;
+      padding: 12px;
       color: var(--text-main);
       font-family: inherit;
-      font-size: 0.95rem;
-      transition: border-color var(--transition-fast);
-    }
-    .form-control:focus {
-      border-color: var(--accent-emerald-bright);
-      outline: none;
+      font-size: 0.92rem;
     }
 
-    textarea.form-control {
-      min-height: 130px;
+    .form-field textarea {
+      min-height: 110px;
       resize: vertical;
     }
 
-    /* ==========================================================================
-       15. FOOTER
-       ========================================================================== */
     .site-footer {
-      border-top: 1px solid var(--border-subtle);
-      padding: 60px 0 40px;
-      margin-top: 100px;
-      background: rgba(3, 5, 9, 0.9);
+      border-top: 1px solid var(--surface-border);
+      padding: 48px 0;
+      margin-top: 80px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-dim);
     }
 
     .footer-flex {
@@ -1419,199 +920,147 @@
       gap: 20px;
     }
 
-    .footer-brand-title {
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--text-main);
-    }
-
-    .footer-copyright {
-      font-size: 0.85rem;
-      color: var(--text-dim);
-    }
-
     /* ==========================================================================
-       16. REVEAL ANIMATIONS & RESPONSIVE
+       12. RESPONSIVE DESIGN & ACCESSIBILITY
        ========================================================================== */
-    .reveal-on-scroll {
+    .reveal {
       opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 700ms cubic-bezier(0.16, 1, 0.3, 1), transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(20px);
+      transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-
-    .reveal-on-scroll.visible {
+    .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
 
     @media (max-width: 1024px) {
-      .hero-grid { grid-template-columns: 1fr; }
-      .about-bento-grid { grid-template-columns: 1fr; }
-      .project-hero-header { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .skills-matrix-grid { grid-template-columns: 1fr 1fr; }
-      .achievements-grid { grid-template-columns: 1fr; }
-      .contact-layout { grid-template-columns: 1fr; }
+      .hero-editorial-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .rentalease-inner { grid-template-columns: 1fr; }
+      .project-card { grid-template-columns: 1fr; }
+      .project-card-links { align-items: flex-start; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 768px) {
-      .nav-menu { display: none; }
-      .mobile-menu-btn { display: flex; }
-      .nav-menu.mobile-open {
+      .nav-links { display: none; }
+      .mobile-btn { display: flex; }
+      .nav-links.open {
         display: flex;
         position: absolute;
-        top: 76px;
+        top: 72px;
         left: 0;
         right: 0;
         flex-direction: column;
-        background: #070a12;
-        border-bottom: 1px solid var(--border-subtle);
-        padding: 20px;
-        border-radius: 0;
+        background: var(--bg);
+        border-bottom: 1px solid var(--surface-border);
+        padding: 24px;
       }
-      .skills-matrix-grid { grid-template-columns: 1fr; }
-      .screen-stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .skills-grid { grid-template-columns: 1fr; }
+      .achievements-list { grid-template-columns: 1fr; }
+      .focus-list { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      .reveal { opacity: 1; transform: none; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Skip to Content -->
-  <a href="#main-content" class="skip-link">Skip to Content</a>
+  <!-- Accessibility Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="scroll-progress" id="scroll-bar" aria-hidden="true"></div>
 
-  <!-- Custom Cursor System -->
-  <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-  <div class="custom-cursor-ring" id="cursor-ring" aria-hidden="true"></div>
-  <div class="custom-cursor-label" id="cursor-label" aria-hidden="true">EXPLORE</div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrap">
+        <a href="#hero" class="brand">
+          <span class="brand-status-dot" aria-hidden="true"></span>
+          HET PATEL
+        </a>
 
-  <!-- Background Canvas Grid & Scroll Progress -->
-  <div class="bg-grid-overlay" aria-hidden="true"></div>
-  <div class="scroll-progress-bar" id="scroll-bar" aria-hidden="true"></div>
+        <button class="mobile-btn" id="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
 
-  <!-- System Initialization Loader -->
-  <div id="system-loader" aria-label="System Loading">
-    <div class="loader-box">
-      <div class="loader-header">
-        <span class="loader-brand">HET<span>.PATEL</span></span>
-        <span>SYS_INIT v2026.4</span>
-      </div>
-      <div class="loader-log" id="loader-log-text">INITIALIZING SYSTEM TELEMETRY...</div>
-      <div class="loader-progress-track">
-        <div class="loader-progress-fill" id="loader-fill"></div>
-      </div>
-      <div class="loader-footer">
-        <span>ADANI UNIVERSITY</span>
-        <span id="loader-percent">0%</span>
-      </div>
-    </div>
-  </div>
+        <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+          <a href="#about" class="nav-link"><span>01.</span> About</a>
+          <a href="#projects" class="nav-link"><span>02.</span> Projects</a>
+          <a href="#experience" class="nav-link"><span>03.</span> Experience</a>
+          <a href="#skills" class="nav-link"><span>04.</span> Stack</a>
+          <a href="#terminal" class="nav-link"><span>05.</span> Terminal</a>
+          <a href="#contact" class="nav-link"><span>06.</span> Contact</a>
+        </nav>
 
-  <!-- Header Navigation -->
-  <header class="site-header" id="site-header">
-    <div class="nav-container">
-      <a href="#hero" class="brand-logo">
-        <span class="status-dot-inline" aria-hidden="true"></span>
-        HET<span>.PATEL</span>
-      </a>
-
-      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
-        <a href="#hero" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#rentalease" class="nav-link">Rentalease</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#terminal" class="nav-link">Terminal</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <button class="btn-terminal-toggle" id="header-term-btn" title="Open Interactive Terminal">
-          <span>&gt;_</span> TERMINAL
-        </button>
-        <a href="#contact" class="btn-nav-cta">Connect</a>
-        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <a href="#contact" class="nav-cta">Connect</a>
       </div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main id="main-content">
+  <main id="main">
 
     <!-- HERO SECTION -->
-    <section id="hero" class="hero-section" aria-labelledby="hero-main-title">
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
       <div class="container">
-        <div class="hero-grid">
-          <div class="hero-text-col">
-            <div class="hero-badge-row">
-              <span class="live-status-pill">
-                <span class="status-dot-inline"></span>
-                AVAILABLE FOR INTERNSHIPS &amp; COLLABORATIONS
-              </span>
-              <span class="location-pill">AHMEDABAD, INDIA</span>
+        <div class="hero-editorial-grid">
+          <div>
+            <div class="hero-meta-strip">
+              <span class="status-badge">Available for Internships &amp; Roles</span>
+              <span>Ahmedabad, India</span>
             </div>
 
-            <h1 id="hero-main-title" class="hero-title">
-              Engineering <span class="gradient-text">scalable systems</span> &amp; full-stack products.
+            <h1 id="hero-title" class="hero-title">
+              Building backend systems <em>&amp; product architecture.</em>
             </h1>
 
-            <p class="hero-subtitle">
-              Hi, I'm <strong>Het Patel</strong> — an Integrated <strong>B.Tech in CS &amp; Applied Mathematics + M.Tech in Cloud Computing</strong> student at <strong>Adani University</strong>. I specialize in backend engineering, cloud architecture, system design, and AI tooling.
+            <p class="hero-lead">
+              Hi, I'm <strong>Het Patel</strong> — an Integrated <strong>B.Tech in Computer Science &amp; Applied Mathematics + M.Tech in Cloud Computing</strong> student at <strong>Adani University</strong>. I engineer full-stack platforms, cloud backend services, and AI tooling.
             </p>
 
-            <div class="hero-cta-group">
-              <a href="#rentalease" class="btn-primary" data-cursor="FEATURED">
-                Explore Rentalease →
-              </a>
-              <a href="#terminal" class="btn-secondary" data-cursor="EXECUTE">
-                Launch Terminal
-              </a>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Featured Projects →</a>
+              <a href="#terminal" class="btn btn-secondary">Open Terminal</a>
             </div>
 
-            <div class="hero-social-strip">
-              <a href="https://github.com/patelhet0507" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <div class="social-links">
+              <a href="https://github.com/patelhet0507" target="_blank" rel="noopener noreferrer">GitHub</a>
               <span>/</span>
-              <a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+              <a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <span>/</span>
-              <a href="https://leetcode.com/u/patelhet0507" target="_blank" rel="noopener noreferrer">LEETCODE</a>
+              <a href="https://leetcode.com/u/patelhet0507" target="_blank" rel="noopener noreferrer">LeetCode</a>
               <span>/</span>
-              <a href="mailto:patelhet.0507@gmail.com">EMAIL</a>
+              <a href="mailto:patelhet.0507@gmail.com">Email</a>
             </div>
           </div>
 
-          <!-- Hero Side Telemetry Card -->
-          <div class="hero-telemetry-col">
-            <div class="hero-telemetry-card">
-              <div class="card-topbar">
-                <span>TELEMETRY_PANEL.JSON</span>
-                <span>STATUS: OPERATIONAL</span>
+          <!-- Hero Technical Snapshot -->
+          <div class="hero-tech-card">
+            <div class="tech-card-header">
+              <span>developer.profile</span>
+              <span>2026</span>
+            </div>
+            <div class="meta-list">
+              <div class="meta-item">
+                <span class="meta-label">Program</span>
+                <span class="meta-val">Integrated B.Tech + M.Tech</span>
               </div>
-              <div class="card-body">
-                <div class="telemetry-meta-grid">
-                  <div class="meta-box">
-                    <div class="meta-box-label">Degree</div>
-                    <div class="meta-box-value">B.Tech + M.Tech</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-box-label">University</div>
-                    <div class="meta-box-value">Adani Univ</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-box-label">Specialization</div>
-                    <div class="meta-box-value">Cloud &amp; Math</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-box-label">Focus</div>
-                    <div class="meta-box-value">Full-Stack &amp; AI</div>
-                  </div>
-                </div>
-
-                <div class="hero-featured-spotlight">
-                  <div class="spotlight-tag">★ Flagship Product</div>
-                  <div class="spotlight-title">Rentalease SaaS</div>
-                  <div class="spotlight-desc">Property &amp; Agreement Management SaaS with role-based workflows, automated accounting ledgers, and AI Q&amp;A.</div>
-                </div>
+              <div class="meta-item">
+                <span class="meta-label">Institution</span>
+                <span class="meta-val">Adani University</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Disciplines</span>
+                <span class="meta-val">CS &amp; Applied Math / Cloud Computing</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Core Focus</span>
+                <span class="meta-val">Backend Engineering • Cloud Architecture</span>
               </div>
             </div>
           </div>
@@ -1620,791 +1069,545 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" aria-labelledby="about-heading">
+    <section id="about" aria-labelledby="about-title">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-title-wrap">
-            <span class="section-number">01 / SIGNAL</span>
-            <h2 id="about-heading" class="section-title">About &amp; Capabilities</h2>
-          </div>
-          <p class="section-subtitle">A clear breakdown of engineering focus, academic foundation, and technical philosophy.</p>
+        <div class="section-header reveal">
+          <span class="section-num">01 / OVERVIEW</span>
+          <h2 id="about-title" class="section-title">About &amp; Focus</h2>
         </div>
 
-        <div class="about-bento-grid">
-          <div class="bento-card reveal-on-scroll">
-            <h3 class="bento-card-title">Engineering Philosophy</h3>
-            <p class="bento-card-text">
-              I believe in building software that is technically clean, resilient, and centered around real product utility. Rather than over-engineering, I focus on strong backend fundamentals, data structure optimization, clean API interfaces, and intuitive UX.
+        <div class="about-grid">
+          <div class="about-narrative reveal">
+            <p>
+              I am a student developer centered on software architecture, cloud-native deployments, and practical engineering. My technical foundation combines rigorous theoretical applied mathematics with practical backend systems design.
             </p>
-            <div class="chip-cloud">
-              <span class="tech-chip">Backend Systems</span>
-              <span class="tech-chip">Cloud Architecture</span>
-              <span class="tech-chip">System Design</span>
-              <span class="tech-chip">RESTful APIs</span>
-              <span class="tech-chip">AI/LLM Integration</span>
-              <span class="tech-chip">Applied Mathematics</span>
-            </div>
+            <p>
+              Currently completing my dual degree at Adani University, I focus on building maintainable software across full-stack web applications, database management, and local AI model integration.
+            </p>
           </div>
 
-          <div class="bento-card reveal-on-scroll">
-            <h3 class="bento-card-title">Academic Background</h3>
-            <div class="education-bento-list">
-              <div class="edu-item">
-                <div class="edu-degree">Integrated B.Tech (CS &amp; AM) + M.Tech (Cloud)</div>
-                <div class="edu-school">Adani University, Ahmedabad</div>
-                <div class="edu-desc">Comprehensive curriculum covering Computer Science, Applied Mathematics, Cloud Infrastructure, and Distributed Systems.</div>
-              </div>
+          <div class="focus-list reveal">
+            <div class="focus-card">
+              <div class="focus-title">Backend Architecture</div>
+              <div class="focus-desc">FastAPI, Django, RESTful APIs, data validation, JWT authentication.</div>
+            </div>
+            <div class="focus-card">
+              <div class="focus-title">Cloud &amp; Infrastructure</div>
+              <div class="focus-desc">Cloud computing paradigms, Docker containerization, Vercel deployments.</div>
+            </div>
+            <div class="focus-card">
+              <div class="focus-title">Full-Stack Development</div>
+              <div class="focus-desc">React, Next.js, state management, SQL &amp; Firestore persistence.</div>
+            </div>
+            <div class="focus-card">
+              <div class="focus-title">AI &amp; Developer Tools</div>
+              <div class="focus-desc">Local LLM inference via llama.cpp, custom workflow utilities.</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- HERO PROJECT SECTION — RENTALEASE -->
-    <section id="rentalease" aria-labelledby="rentalease-heading">
+    <!-- FEATURED PROJECTS -->
+    <section id="projects" aria-labelledby="projects-title">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-title-wrap">
-            <span class="section-number">02 / FLAGSHIP BUILD</span>
-            <h2 id="rentalease-heading" class="section-title">Rentalease SaaS</h2>
-          </div>
-          <p class="section-subtitle">Rental &amp; Property Management SaaS built for Indian landlords and property operators.</p>
+        <div class="section-header reveal">
+          <span class="section-num">02 / SELECTED WORK</span>
+          <h2 id="projects-title" class="section-title">Projects</h2>
+          <p class="section-desc">Production SaaS, mobile card games, logistics hackathons, and local AI applications.</p>
         </div>
 
-        <div class="hero-project-wrapper reveal-on-scroll" data-cursor="PRODUCT">
-          <div class="project-hero-header">
+        <!-- Flagship Project: Rentalease -->
+        <div class="rentalease-hero-box reveal">
+          <div class="rentalease-inner">
             <div>
-              <div class="project-type-badge">Featured Production SaaS</div>
+              <div class="project-kicker">Flagship SaaS Build</div>
               <h3 class="project-hero-title">Rentalease</h3>
-              <p class="project-hero-subtitle">
-                A full-scale SaaS platform featuring tenant management, agreement tracking, automated invoice generation, payment ledgers, receivables aging reports, and AI-powered data analytics.
+              <p class="project-hero-desc">
+                Rental &amp; property management platform engineered for Indian landlords and property operators. Integrates agreement lifecycle tracking, automated accounting ledgers, invoicing, receivables aging reports, and AI-assisted data Q&amp;A.
               </p>
-              <div class="stack-tags" style="margin-bottom: 24px;">
-                <span class="stack-tag">React</span>
-                <span class="stack-tag">Firebase Auth</span>
-                <span class="stack-tag">Firestore</span>
-                <span class="stack-tag">Vercel</span>
-                <span class="stack-tag">AI Analytics</span>
+              <div class="tag-row" style="margin-bottom: 24px;">
+                <span class="tag">React</span>
+                <span class="tag">Firebase Auth</span>
+                <span class="tag">Firestore</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">Accounting Engine</span>
               </div>
-              <div class="project-action-btns">
-                <a href="https://rentalease.co.in" target="_blank" rel="noopener noreferrer" class="btn-primary">
-                  Visit Live Platform ↗
-                </a>
-                <a href="https://github.com/patelhet0507/Rental-Module" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                  View Source Code ↗
-                </a>
+              <div class="project-actions">
+                <a href="https://rentalease.co.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live SaaS Platform ↗</a>
+                <a href="https://github.com/patelhet0507/Rental-Module" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code ↗</a>
               </div>
             </div>
 
-            <!-- Side Feature Summary -->
-            <div style="background: rgba(10, 14, 23, 0.6); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-              <h4 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 12px; font-family: var(--font-mono);">Key Engine Capabilities</h4>
+            <!-- Features Card -->
+            <div style="background: rgba(8, 9, 12, 0.7); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--surface-border);">
+              <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-main); margin-bottom: 12px;">Core Modules Implemented</div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem; color: var(--text-muted);">
-                <li>✓ Role-based access control (Admin, Manager, Landlord)</li>
-                <li>✓ Agreement renewal alerts &amp; status telemetry</li>
-                <li>✓ Complete accounting module with LEDGER &amp; Receivables</li>
-                <li>✓ AI-assisted Q&amp;A and natural language data insights</li>
-                <li>✓ Real-time search, export, and platform console</li>
+                <li>• Properties, Tenants &amp; Companies Directory</li>
+                <li>• Lease Agreement Expiry &amp; Renewals</li>
+                <li>• Accounting Vouchers, Ledgers &amp; Invoicing</li>
+                <li>• Receivables Aging Analysis</li>
+                <li>• AI Data Analytics &amp; Q&amp;A Console</li>
               </ul>
             </div>
           </div>
 
-          <!-- Interactive Tab Switcher Showcase -->
-          <div class="project-tabs-container">
-            <div class="tab-buttons-row">
-              <button class="tab-btn active" data-tab="tab-overview">01. Dashboard &amp; Analytics</button>
-              <button class="tab-btn" data-tab="tab-properties">02. Properties &amp; Tenants</button>
-              <button class="tab-btn" data-tab="tab-accounting">03. Accounting &amp; Ledger</button>
-              <button class="tab-btn" data-tab="tab-ai">04. AI Analytics Console</button>
+          <!-- Interactive Module Showcase -->
+          <div class="case-study-interactive">
+            <div class="tab-bar">
+              <button class="tab-item active" data-tab="pane-overview">Overview</button>
+              <button class="tab-item" data-tab="pane-tenants">Tenants &amp; Agreements</button>
+              <button class="tab-item" data-tab="pane-accounting">Accounting &amp; Ledger</button>
+              <button class="tab-item" data-tab="pane-ai">AI Q&amp;A Console</button>
             </div>
 
-            <div class="mockup-display-area">
-              <!-- Tab 1 Pane -->
-              <div class="mockup-view-pane active" id="tab-overview">
-                <div class="screen-header-bar">
-                  <span>RENTALEASE // DASHBOARD OVERVIEW</span>
-                  <span>LIVE SYSTEM METRICS</span>
-                </div>
-                <div class="screen-stats-grid">
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Active Properties</div>
-                    <div class="screen-stat-num">48</div>
-                  </div>
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Active Tenants</div>
-                    <div class="screen-stat-num">62</div>
-                  </div>
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Monthly Collection</div>
-                    <div class="screen-stat-num">₹ 4,85,000</div>
-                  </div>
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Pending Renewals</div>
-                    <div class="screen-stat-num">5</div>
-                  </div>
-                </div>
-              </div>
+            <div class="tab-content-pane active" id="pane-overview">
+              <div style="color: var(--text-dim); margin-bottom: 8px;">// RENTALEASE SYSTEM STATUS: ACTIVE</div>
+              <div>Properties Managed: 48 | Active Agreements: 62 | Collection Status: 94.2%</div>
+            </div>
 
-              <!-- Tab 2 Pane -->
-              <div class="mockup-view-pane" id="tab-properties">
-                <div class="screen-header-bar">
-                  <span>RENTALEASE // TENANTS &amp; AGREEMENTS</span>
-                  <span>FILTER: ACTIVE</span>
-                </div>
-                <table class="screen-table-preview">
-                  <thead>
-                    <tr>
-                      <th>PROPERTY</th>
-                      <th>TENANT NAME</th>
-                      <th>AGREEMENT EXPIRY</th>
-                      <th>STATUS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Sun Real Heights #402</td>
-                      <td>Aarav Sharma</td>
-                      <td>15 NOV 2026</td>
-                      <td><span style="color:#10b981">ACTIVE</span></td>
-                    </tr>
-                    <tr>
-                      <td>Ratna Business Park #108</td>
-                      <td>TechCraft Solutions</td>
-                      <td>01 DEC 2026</td>
-                      <td><span style="color:#10b981">ACTIVE</span></td>
-                    </tr>
-                    <tr>
-                      <td>Greenwood Villa #12</td>
-                      <td>Rohan Patel</td>
-                      <td>20 OCT 2026</td>
-                      <td><span style="color:#f59e0b">RENEWAL DUE</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div class="tab-content-pane" id="pane-tenants">
+              <div style="color: var(--text-dim); margin-bottom: 8px;">// AGREEMENT STATUS MONITOR</div>
+              <table class="mockup-table">
+                <thead>
+                  <tr>
+                    <th>PROPERTY</th>
+                    <th>TENANT</th>
+                    <th>EXPIRY</th>
+                    <th>STATUS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sun Real Heights #402</td>
+                    <td>Aarav Sharma</td>
+                    <td>15 NOV 2026</td>
+                    <td style="color:var(--accent)">ACTIVE</td>
+                  </tr>
+                  <tr>
+                    <td>Greenwood Villa #12</td>
+                    <td>Rohan Patel</td>
+                    <td>20 OCT 2026</td>
+                    <td style="color:#f59e0b">RENEWAL DUE</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-              <!-- Tab 3 Pane -->
-              <div class="mockup-view-pane" id="tab-accounting">
-                <div class="screen-header-bar">
-                  <span>RENTALEASE // ACCOUNTING &amp; RECEIVABLES AGING</span>
-                  <span>FINANCIAL SUMMARY</span>
-                </div>
-                <div class="screen-stats-grid">
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Total Invoiced</div>
-                    <div class="screen-stat-num">₹ 14,20,000</div>
-                  </div>
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Total Received</div>
-                    <div class="screen-stat-num">₹ 13,50,000</div>
-                  </div>
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Aging &gt; 30 Days</div>
-                    <div class="screen-stat-num">₹ 70,000</div>
-                  </div>
-                  <div class="screen-stat-card">
-                    <div class="screen-stat-label">Vouchers Generated</div>
-                    <div class="screen-stat-num">142</div>
-                  </div>
-                </div>
-              </div>
+            <div class="tab-content-pane" id="pane-accounting">
+              <div style="color: var(--text-dim); margin-bottom: 8px;">// FINANCIAL SUMMARY &amp; AGING</div>
+              <div>Invoiced Total: ₹ 14,20,000 | Received: ₹ 13,50,000 | Receivables Aging (&gt;30d): ₹ 70,000</div>
+            </div>
 
-              <!-- Tab 4 Pane -->
-              <div class="mockup-view-pane" id="tab-ai">
-                <div class="screen-header-bar">
-                  <span>RENTALEASE // AI DATA INSIGHTS ENGINE</span>
-                  <span>QUERY: REVENUE FORECAST</span>
-                </div>
-                <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid var(--border-strong); padding: 18px; border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-main);">
-                  <p style="color: var(--accent-emerald-bright); margin-bottom: 8px;">&gt; AI Query: "Which tenant agreements are expiring next quarter with pending receivables?"</p>
-                  <p style="color: var(--text-muted);">AI Response: Identified 3 properties with total pending aging of ₹ 45,000. Automated reminder notices prepared for dispatch.</p>
-                </div>
-              </div>
+            <div class="tab-content-pane" id="pane-ai">
+              <div style="color: var(--text-dim); margin-bottom: 8px;">// AI ANALYTICS ENGINE</div>
+              <div style="color: var(--accent);">&gt; Prompt: "Identify pending renewal notices due next month."</div>
+              <div style="color: var(--text-muted); margin-top: 4px;">Result: 3 agreements found. Dispatch notifications prepared.</div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- OTHER PROJECTS SECTION -->
-    <section id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-title-wrap">
-            <span class="section-number">03 / SELECTED WORK</span>
-            <h2 id="projects-heading" class="section-title">Projects Showcase</h2>
-          </div>
-          <p class="section-subtitle">Real applications built across mobile, web, backend microservices, and AI inference.</p>
-        </div>
+        <!-- Stack of Secondary Projects -->
+        <div class="projects-stack">
 
-        <div class="projects-grid">
-
-          <!-- Project 1: Kaccho Phool -->
-          <div class="project-card reveal-on-scroll" data-cursor="GAME">
+          <!-- Kaccho Phool -->
+          <article class="project-card reveal">
             <div>
-              <div class="project-card-type">Android &amp; Multiplayer Game</div>
+              <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); margin-bottom: 8px;">Android &amp; Multiplayer Game</div>
               <h3 class="project-card-title">Kaccho Phool</h3>
               <p class="project-card-desc">
-                Traditional trick-taking card game Android application built with Kotlin and Jetpack Compose. Supports real-time multiplayer lobbies, intelligent AI bot opponents, and Firebase Realtime Database synchronization.
+                Traditional trick-taking card game Android application built with Kotlin and Jetpack Compose. Supports real-time multiplayer lobbies, AI bot opponents, and Firebase Realtime Database synchronization.
               </p>
-              <div style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 16px; font-family: var(--font-mono);">
+              <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-bottom: 16px;">
                 Team: Het Patel, Shubham Patel, Milin Patel, Vansh Parmar, Vraj Soni, Rushi Patel, Karma Patel
               </div>
-            </div>
-            <div class="project-card-meta">
-              <div class="stack-tags">
-                <span class="stack-tag">Kotlin</span>
-                <span class="stack-tag">Jetpack Compose</span>
-                <span class="stack-tag">Firebase RTDB</span>
-              </div>
-              <div class="project-links-row">
-                <a href="https://kacchooisdaphoolisda.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link">Live ↗</a>
-                <a href="https://github.com/patelhet0507/kacchooisdaphoolisda" target="_blank" rel="noopener noreferrer" class="project-icon-link">GitHub ↗</a>
+              <div class="tag-row">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">Firebase RTDB</span>
               </div>
             </div>
-          </div>
+            <div class="project-card-links">
+              <a href="https://kacchooisdaphoolisda.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">Live Site ↗</a>
+              <a href="https://github.com/patelhet0507/kacchooisdaphoolisda" target="_blank" rel="noopener noreferrer" class="project-link-btn">GitHub Repo ↗</a>
+            </div>
+          </article>
 
-          <!-- Project 2: TransitOps -->
-          <div class="project-card reveal-on-scroll" data-cursor="HACKATHON">
+          <!-- TransitOps -->
+          <article class="project-card reveal">
             <div>
-              <div class="project-card-type">Odoo Hackathon Build</div>
+              <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-bottom: 8px;">Odoo Hackathon Project</div>
               <h3 class="project-card-title">TransitOps</h3>
               <p class="project-card-desc">
-                Logistics &amp; fleet operations management application developed for the Odoo Hackathon. Features real-time asset tracking, trip logs, vehicle maintenance scheduling, and CSV export reporting.
+                Logistics &amp; fleet operations management system built for the Odoo Hackathon. Includes asset tracking, trip logs, vehicle maintenance schedules, and CSV export utilities.
               </p>
-            </div>
-            <div class="project-card-meta">
-              <div class="stack-tags">
-                <span class="stack-tag">Django</span>
-                <span class="stack-tag">Tailwind CSS</span>
-                <span class="stack-tag">Chart.js</span>
-                <span class="stack-tag">PostgreSQL</span>
-              </div>
-              <div class="project-links-row">
-                <a href="https://odoo-hackathon-wheat.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link">Live ↗</a>
-                <a href="https://github.com/patelhet0507/odoo-hackathon" target="_blank" rel="noopener noreferrer" class="project-icon-link">GitHub ↗</a>
+              <div class="tag-row">
+                <span class="tag">Django</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">PostgreSQL</span>
               </div>
             </div>
-          </div>
+            <div class="project-card-links">
+              <a href="https://odoo-hackathon-wheat.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">Live Demo ↗</a>
+              <a href="https://github.com/patelhet0507/odoo-hackathon" target="_blank" rel="noopener noreferrer" class="project-link-btn">GitHub Repo ↗</a>
+            </div>
+          </article>
 
-          <!-- Project 3: ShopEase -->
-          <div class="project-card reveal-on-scroll" data-cursor="FULL-STACK">
+          <!-- ShopEase -->
+          <article class="project-card reveal">
             <div>
-              <div class="project-card-type">Full-Stack E-Commerce</div>
+              <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-bottom: 8px;">Full-Stack E-Commerce</div>
               <h3 class="project-card-title">ShopEase</h3>
               <p class="project-card-desc">
-                Complete e-commerce platform with React frontend and FastAPI backend. Includes JWT authentication, PostgreSQL data layer, product catalog management, debounced search, and cart workflows.
+                E-commerce application featuring React frontend and FastAPI backend with PostgreSQL database, JWT authentication flows, product catalog, debounced search, and cart workflows.
               </p>
-            </div>
-            <div class="project-card-meta">
-              <div class="stack-tags">
-                <span class="stack-tag">React</span>
-                <span class="stack-tag">FastAPI</span>
-                <span class="stack-tag">PostgreSQL</span>
-                <span class="stack-tag">JWT</span>
-              </div>
-              <div class="project-links-row">
-                <a href="https://shop-ease-final.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link">Live ↗</a>
-                <a href="https://github.com/patelhet0507/ShopEase_final" target="_blank" rel="noopener noreferrer" class="project-icon-link">GitHub ↗</a>
+              <div class="tag-row">
+                <span class="tag">React</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">JWT</span>
               </div>
             </div>
-          </div>
+            <div class="project-card-links">
+              <a href="https://shop-ease-final.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">Live App ↗</a>
+              <a href="https://github.com/patelhet0507/ShopEase_final" target="_blank" rel="noopener noreferrer" class="project-link-btn">GitHub Repo ↗</a>
+            </div>
+          </article>
 
-          <!-- Project 4: Local AI Chatbot -->
-          <div class="project-card reveal-on-scroll" data-cursor="AI ENGINE">
+          <!-- Local AI Chatbot -->
+          <article class="project-card reveal">
             <div>
-              <div class="project-card-type">Local LLM Application</div>
+              <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-bottom: 8px;">Privacy-First Local LLM</div>
               <h3 class="project-card-title">Local AI Chatbot</h3>
               <p class="project-card-desc">
-                Privacy-first local AI assistant utilizing FastAPI, React, and llama-cpp-python for GGUF model inference without external API dependencies. Includes streaming chat responses and conversation history.
+                Local-first AI chatbot application using FastAPI, React, and llama-cpp-python for GGUF model inference without third-party API dependencies. Includes streaming responses and conversation persistence.
               </p>
-            </div>
-            <div class="project-card-meta">
-              <div class="stack-tags">
-                <span class="stack-tag">Python</span>
-                <span class="stack-tag">FastAPI</span>
-                <span class="stack-tag">React</span>
-                <span class="stack-tag">llama.cpp</span>
-              </div>
-              <div class="project-links-row">
-                <a href="https://github.com/patelhet0507/Local-AI-ChatBot" target="_blank" rel="noopener noreferrer" class="project-icon-link">GitHub ↗</a>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">React</span>
+                <span class="tag">llama.cpp</span>
               </div>
             </div>
-          </div>
+            <div class="project-card-links">
+              <a href="https://github.com/patelhet0507/Local-AI-ChatBot" target="_blank" rel="noopener noreferrer" class="project-link-btn">GitHub Repo ↗</a>
+            </div>
+          </article>
 
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE SECTION -->
-    <section id="experience" aria-labelledby="experience-heading">
+    <section id="experience" aria-labelledby="experience-title">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-title-wrap">
-            <span class="section-number">04 / CAREER MATRIX</span>
-            <h2 id="experience-heading" class="section-title">Professional Experience</h2>
-          </div>
-          <p class="section-subtitle">Hands-on experience gained across software internships and system implementations.</p>
+        <div class="section-header reveal">
+          <span class="section-num">03 / EXPERIENCE</span>
+          <h2 id="experience-title" class="section-title">Timeline</h2>
         </div>
 
-        <div class="timeline-container">
-          <div class="timeline-card reveal-on-scroll">
-            <div class="timeline-header">
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-top">
               <div>
-                <h3 class="role-title">Python Developer Intern</h3>
-                <div class="company-name">Cognifyz</div>
+                <div class="role-name">Python Developer Intern</div>
+                <div class="company">Cognifyz (Remote)</div>
               </div>
-              <div class="timeline-date">04 JUN 2026 – 04 JUL 2026</div>
+              <div class="date-badge">04 JUN 2026 – 04 JUL 2026</div>
             </div>
-            <p class="timeline-desc">
-              Developed Python backend scripts, automated data processing tasks, and engaged in structured software development workflows in a remote internship environment.
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Executed Python development tasks, data processing utilities, and structured coding assignments.
             </p>
           </div>
 
-          <div class="timeline-card reveal-on-scroll">
-            <div class="timeline-header">
+          <div class="timeline-item reveal">
+            <div class="timeline-top">
               <div>
-                <h3 class="role-title">Full Stack Developer Intern</h3>
-                <div class="company-name">RatnaBhumi Developers Limited / Ratna Group</div>
+                <div class="role-name">Full Stack Developer Intern</div>
+                <div class="company">RatnaBhumi Developers Limited / Ratna Group (Remote)</div>
               </div>
-              <div class="timeline-date">REMOTE</div>
+              <div class="date-badge">REMOTE</div>
             </div>
-            <p class="timeline-desc">
-              Engineered a complete Rental &amp; Property Agreement Management System. Contributed across full-stack modules including authentication, agreement status monitoring, and tenant records under the mentorship of Dhaval Moridhara.
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Built a Rental &amp; Property Agreement Management System under the guidance of mentor Dhaval Moridhara.
             </p>
           </div>
 
-          <div class="timeline-card reveal-on-scroll">
-            <div class="timeline-header">
+          <div class="timeline-item reveal">
+            <div class="timeline-top">
               <div>
-                <h3 class="role-title">Backend Developer Intern</h3>
-                <div class="company-name">Technoville Consultants / Flamingo Group</div>
+                <div class="role-name">Backend Developer Intern</div>
+                <div class="company">Technoville Consultants / Flamingo Group (Remote)</div>
               </div>
-              <div class="timeline-date">REMOTE (COMPLETED 16 JUL 2026)</div>
+              <div class="date-badge">COMPLETED 16 JUL 2026</div>
             </div>
-            <p class="timeline-desc">
-              Worked on backend API architecture, database operations, and system maintenance tasks during a remote developer internship.
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Contributed to backend developer operations, API integrations, and database maintenance.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS MATRIX SECTION -->
-    <section id="skills" aria-labelledby="skills-heading">
+    <!-- SKILLS & ACHIEVEMENTS SECTION -->
+    <section id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-title-wrap">
-            <span class="section-number">05 / ECOSYSTEM</span>
-            <h2 id="skills-heading" class="section-title">Technical Stack</h2>
-          </div>
-          <p class="section-subtitle">Verified tools and technologies used across my projects and systems.</p>
+        <div class="section-header reveal">
+          <span class="section-num">04 / ECOSYSTEM</span>
+          <h2 id="skills-title" class="section-title">Technical Stack</h2>
         </div>
 
-        <div class="skills-matrix-grid">
-          <div class="skill-category-card reveal-on-scroll">
-            <div class="skill-category-title">Languages</div>
-            <div class="skill-pills-list">
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">C++</span>
-              <span class="skill-pill">C</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">TypeScript</span>
-              <span class="skill-pill">SQL</span>
+        <div class="skills-grid">
+          <div class="skill-box reveal">
+            <div class="skill-box-cat">Languages</div>
+            <div class="skill-list-inline">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">C++</span>
+              <span class="skill-item">C</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">TypeScript</span>
+              <span class="skill-item">SQL</span>
             </div>
           </div>
 
-          <div class="skill-category-card reveal-on-scroll">
-            <div class="skill-category-title">Frontend</div>
-            <div class="skill-pills-list">
-              <span class="skill-pill">React</span>
-              <span class="skill-pill">Next.js</span>
-              <span class="skill-pill">HTML5 / CSS3</span>
-              <span class="skill-pill">Tailwind CSS</span>
+          <div class="skill-box reveal">
+            <div class="skill-box-cat">Frontend</div>
+            <div class="skill-list-inline">
+              <span class="skill-item">React</span>
+              <span class="skill-item">Next.js</span>
+              <span class="skill-item">HTML/CSS</span>
+              <span class="skill-item">Tailwind CSS</span>
             </div>
           </div>
 
-          <div class="skill-category-card reveal-on-scroll">
-            <div class="skill-category-title">Backend</div>
-            <div class="skill-pills-list">
-              <span class="skill-pill">FastAPI</span>
-              <span class="skill-pill">Django</span>
-              <span class="skill-pill">Flask</span>
-              <span class="skill-pill">REST APIs</span>
-              <span class="skill-pill">JWT</span>
+          <div class="skill-box reveal">
+            <div class="skill-box-cat">Backend</div>
+            <div class="skill-list-inline">
+              <span class="skill-item">FastAPI</span>
+              <span class="skill-item">Django</span>
+              <span class="skill-item">Flask</span>
+              <span class="skill-item">REST APIs</span>
+              <span class="skill-item">JWT</span>
             </div>
           </div>
 
-          <div class="skill-category-card reveal-on-scroll">
-            <div class="skill-category-title">Databases</div>
-            <div class="skill-pills-list">
-              <span class="skill-pill">PostgreSQL</span>
-              <span class="skill-pill">Firestore</span>
-              <span class="skill-pill">Firebase RTDB</span>
-              <span class="skill-pill">SQLite</span>
+          <div class="skill-box reveal">
+            <div class="skill-box-cat">Databases</div>
+            <div class="skill-list-inline">
+              <span class="skill-item">PostgreSQL</span>
+              <span class="skill-item">Firestore</span>
+              <span class="skill-item">Firebase RTDB</span>
+              <span class="skill-item">SQLite</span>
             </div>
           </div>
 
-          <div class="skill-category-card reveal-on-scroll">
-            <div class="skill-category-title">Cloud &amp; Infrastructure</div>
-            <div class="skill-pills-list">
-              <span class="skill-pill">Vercel</span>
-              <span class="skill-pill">Firebase</span>
-              <span class="skill-pill">Docker</span>
-              <span class="skill-pill">Git / GitHub</span>
+          <div class="skill-box reveal">
+            <div class="skill-box-cat">Infrastructure &amp; Tools</div>
+            <div class="skill-list-inline">
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">Vercel</span>
+              <span class="skill-item">Git</span>
+              <span class="skill-item">GitHub</span>
             </div>
           </div>
 
-          <div class="skill-category-card reveal-on-scroll">
-            <div class="skill-category-title">AI &amp; Developer Tools</div>
-            <div class="skill-pills-list">
-              <span class="skill-pill">llama.cpp</span>
-              <span class="skill-pill">AI/LLM Workflows</span>
-              <span class="skill-pill">Postman</span>
-              <span class="skill-pill">System Design</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACHIEVEMENTS & INTERACTIVE TERMINAL -->
-    <section id="terminal" aria-labelledby="terminal-heading">
-      <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-title-wrap">
-            <span class="section-number">06 / INTERACTIVE LAYER</span>
-            <h2 id="terminal-heading" class="section-title">Developer Terminal</h2>
-          </div>
-          <p class="section-subtitle">Type <code style="color:var(--accent-emerald-bright)">help</code> or explore commands directly inside the shell.</p>
-        </div>
-
-        <div class="terminal-window reveal-on-scroll" data-cursor="TERMINAL">
-          <div class="terminal-topbar">
-            <div class="terminal-dots">
-              <span class="term-dot close"></span>
-              <span class="term-dot min"></span>
-              <span class="term-dot max"></span>
-            </div>
-            <div class="terminal-title-text">guest@hetpatel:~ (zsh)</div>
-            <div style="width: 40px;"></div>
-          </div>
-
-          <div class="terminal-body-area" id="terminal-body">
-            <div class="term-output-history" id="term-history">
-Het Patel Digital Identity Terminal [Version 2026.1]
-(c) Het Patel. Type "help" to list available system commands.
-            </div>
-
-            <div class="term-input-row">
-              <span class="term-prompt-label">guest@hetpatel:~$</span>
-              <input type="text" class="term-cmd-input" id="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal Input Prompt">
+          <div class="skill-box reveal">
+            <div class="skill-box-cat">AI / Systems</div>
+            <div class="skill-list-inline">
+              <span class="skill-item">llama.cpp</span>
+              <span class="skill-item">AI Workflow Tooling</span>
+              <span class="skill-item">System Design</span>
             </div>
           </div>
         </div>
 
-        <!-- Achievements Bento -->
-        <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--text-main); margin: 60px 0 24px;">
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--text-main); margin: 60px 0 20px;">
           Achievements &amp; Hackathons
         </h3>
-        <div class="achievements-grid">
-          <div class="achievement-card reveal-on-scroll">🏆 Adobe University Hackathon — Round 2 Participant</div>
-          <div class="achievement-card reveal-on-scroll">🏆 TVS Credit Hackathon — Round 2 Participant</div>
-          <div class="achievement-card reveal-on-scroll">🏆 Smart India Hackathon — Round 2 Application</div>
-          <div class="achievement-card reveal-on-scroll">📜 Microsoft Generative AI &amp; Agents Certification</div>
-          <div class="achievement-card reveal-on-scroll">⚡ Odoo Techfest Participant</div>
+        <div class="achievements-list reveal">
+          <div class="achievement-item">Adobe University Hackathon — Round 2 Participation</div>
+          <div class="achievement-item">TVS Credit Hackathon — Round 2 Participation</div>
+          <div class="achievement-item">Smart India Hackathon — Round 2 Application</div>
+          <div class="achievement-item">Microsoft Generative AI &amp; Agents Certification</div>
+          <div class="achievement-item">Odoo Techfest Participation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL -->
+    <section id="terminal" aria-labelledby="terminal-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-num">05 / INTERACTIVE SHELL</span>
+          <h2 id="terminal-title" class="section-title">Terminal</h2>
+        </div>
+
+        <div class="terminal-container reveal">
+          <div class="terminal-bar">
+            <div class="term-dots">
+              <span class="term-dot r"></span>
+              <span class="term-dot y"></span>
+              <span class="term-dot g"></span>
+            </div>
+            <span>hetpatel@portfolio:~</span>
+            <div style="width: 30px;"></div>
+          </div>
+
+          <div class="terminal-body" id="term-body">
+            <div class="term-output" id="term-output">Het Patel Developer Terminal [Version 2026.1]
+Type "help" to list available commands.</div>
+            <div class="term-input-row">
+              <span class="term-prompt">hetpatel:~$</span>
+              <input type="text" class="term-input" id="term-input" autocomplete="off" spellcheck="false" aria-label="Terminal input prompt">
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" aria-labelledby="contact-heading">
+    <section id="contact" aria-labelledby="contact-title">
       <div class="container">
-        <div class="contact-layout">
-          <div class="reveal-on-scroll">
-            <span class="section-number">07 / CONNECT</span>
-            <h2 id="contact-heading" class="contact-editorial-title">Let's build something exceptional.</h2>
-            <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
-              Whether you are interested in discussing full-stack development, cloud architecture, or potential internship opportunities, feel free to get in touch.
+        <div class="contact-grid">
+          <div class="reveal">
+            <span class="section-num">06 / CONNECT</span>
+            <h2 id="contact-title" class="contact-title">Get in touch.</h2>
+            <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
+              Interested in discussing software opportunities, backend engineering, or cloud projects? Drop me a message.
             </p>
-
-            <div class="contact-info-list">
-              <div class="contact-info-item">
-                <span class="contact-label">Direct Email</span>
-                <span class="contact-value"><a href="mailto:patelhet.0507@gmail.com">patelhet.0507@gmail.com</a></span>
-              </div>
-              <div class="contact-info-item">
-                <span class="contact-label">GitHub Profile</span>
-                <span class="contact-value"><a href="https://github.com/patelhet0507" target="_blank" rel="noopener noreferrer">github.com/patelhet0507</a></span>
-              </div>
-              <div class="contact-info-item">
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-value"><a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank" rel="noopener noreferrer">linkedin.com/in/het-patel-6b2514376</a></span>
-              </div>
+            <div style="font-family: var(--font-mono); font-size: 0.9rem;">
+              Direct Email: <a href="mailto:patelhet.0507@gmail.com" style="color: var(--accent); text-decoration: none;">patelhet.0507@gmail.com</a>
             </div>
           </div>
 
-          <div class="contact-form-card reveal-on-scroll">
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="form-name" class="form-label">NAME</label>
-                <input type="text" id="form-name" name="name" class="form-control" required placeholder="Your name">
-              </div>
+          <form id="contact-form" class="contact-form reveal">
+            <div class="form-field">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
 
-              <div class="form-group">
-                <label for="form-email" class="form-label">EMAIL ADDRESS</label>
-                <input type="email" id="form-email" name="email" class="form-control" required placeholder="name@example.com">
-              </div>
+            <div class="form-field">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </div>
 
-              <div class="form-group">
-                <label for="form-message" class="form-label">MESSAGE</label>
-                <textarea id="form-message" name="message" class="form-control" required placeholder="Describe your project or proposal..."></textarea>
-              </div>
+            <div class="form-field">
+              <label for="message">MESSAGE</label>
+              <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+            </div>
 
-              <button type="submit" class="btn-primary" id="form-submit-btn" style="width: 100%; justify-content: center; border: none; cursor: pointer;">
-                Send Message →
-              </button>
-              <div id="form-status-msg" style="margin-top: 14px; font-size: 0.85rem; font-family: var(--font-mono); display: none;"></div>
-            </form>
-          </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%; justify-content: center;">Send Message →</button>
+            <div id="form-msg" style="margin-top: 12px; font-family: var(--font-mono); font-size: 0.82rem; display: none;"></div>
+          </form>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- SITE FOOTER -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-flex">
-        <div>
-          <div class="footer-brand-title">HET PATEL</div>
-          <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 4px;">Integrated B.Tech + M.Tech Student @ Adani University</div>
-        </div>
-
-        <div class="hero-social-strip">
-          <a href="https://github.com/patelhet0507" target="_blank" rel="noopener noreferrer">GITHUB</a>
-          <a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-          <a href="https://leetcode.com/u/patelhet0507" target="_blank" rel="noopener noreferrer">LEETCODE</a>
-        </div>
-
-        <div class="footer-copyright">
-          &copy; 2026 Het Patel. All rights reserved.
-        </div>
+        <div>HET PATEL — Integrated B.Tech CS &amp; AM + M.Tech Cloud @ Adani University</div>
+        <div>&copy; 2026 Het Patel</div>
       </div>
     </div>
   </footer>
 
-  <!-- SCRIPT CONTROLLER -->
+  <!-- SCRIPT -->
   <script>
     (function () {
       'use strict';
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      // 1. SYSTEM LOADER SCRIPT
-      const loader = document.getElementById('system-loader');
-      const loaderFill = document.getElementById('loader-fill');
-      const loaderPercent = document.getElementById('loader-percent');
-      const loaderLogText = document.getElementById('loader-log-text');
-
-      const logMessages = [
-        'INITIALIZING SYSTEM TELEMETRY...',
-        'MOUNTING CORE ENGINE MODULES...',
-        'CONNECTING TERMINAL EMULATOR...',
-        'LOADING RENTALEASE CASE STUDY...',
-        'SYSTEM READY'
-      ];
-
-      let currentStep = 0;
-      const loaderInterval = setInterval(() => {
-        currentStep += 20;
-        if (currentStep <= 100) {
-          loaderFill.style.width = currentStep + '%';
-          loaderPercent.textContent = currentStep + '%';
-          if (logMessages[currentStep / 20 - 1]) {
-            loaderLogText.textContent = logMessages[currentStep / 20 - 1];
-          }
-        }
-        if (currentStep >= 100) {
-          clearInterval(loaderInterval);
-          setTimeout(() => {
-            loader.classList.add('loaded');
-          }, 300);
-        }
-      }, 90);
-
-      // 2. SCROLL PROGRESS & HEADER STATE
+      // Scroll Progress
       const scrollBar = document.getElementById('scroll-bar');
-      const header = document.getElementById('site-header');
-
       window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-        scrollBar.style.width = scrollPct + '%';
-
-        if (scrollTop > 20) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
+        const y = window.scrollY;
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        scrollBar.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
       }, { passive: true });
 
-      // 3. CUSTOM CURSOR TRACKING
-      if (!prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
-        const cursorDot = document.getElementById('cursor-dot');
-        const cursorRing = document.getElementById('cursor-ring');
-        const cursorLabel = document.getElementById('cursor-label');
-
-        let mouseX = -100, mouseY = -100;
-        let ringX = -100, ringY = -100;
-
-        window.addEventListener('mousemove', (e) => {
-          mouseX = e.clientX;
-          mouseY = e.clientY;
-          cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
-          cursorLabel.style.transform = `translate(${mouseX + 16}px, ${mouseY + 16}px)`;
-        }, { passive: true });
-
-        function animateCursor() {
-          ringX += (mouseX - ringX) * 0.18;
-          ringY += (mouseY - ringY) * 0.18;
-          cursorRing.style.transform = `translate(${ringX}px, ${ringY}px)`;
-          requestAnimationFrame(animateCursor);
-        }
-        animateCursor();
-
-        // Hover Handlers
-        document.querySelectorAll('a, button, [data-cursor]').forEach(element => {
-          element.addEventListener('mouseenter', () => {
-            const cursorText = element.getAttribute('data-cursor');
-            if (cursorText) {
-              cursorLabel.textContent = cursorText;
-              document.body.classList.add('hovering-project');
-            } else {
-              document.body.classList.add('hovering-link');
-            }
-          });
-          element.addEventListener('mouseleave', () => {
-            document.body.classList.remove('hovering-link', 'hovering-project');
-          });
+      // Mobile Menu
+      const mobileToggle = document.getElementById('mobile-toggle');
+      const navLinks = document.getElementById('nav-links');
+      if (mobileToggle && navLinks) {
+        mobileToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
         });
       }
 
-      // 4. INTERACTIVE CASE STUDY TAB SWITCHER
-      const tabBtns = document.querySelectorAll('.tab-btn');
-      const tabPanes = document.querySelectorAll('.mockup-view-pane');
-
-      tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const targetTab = btn.getAttribute('data-tab');
-          tabBtns.forEach(b => b.classList.remove('active'));
+      // Case Study Tabs
+      const tabItems = document.querySelectorAll('.tab-item');
+      const tabPanes = document.querySelectorAll('.tab-content-pane');
+      tabItems.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.getAttribute('data-tab');
+          tabItems.forEach(t => t.classList.remove('active'));
           tabPanes.forEach(p => p.classList.remove('active'));
 
-          btn.classList.add('active');
-          const pane = document.getElementById(targetTab);
-          if (pane) pane.classList.add('active');
+          tab.classList.add('active');
+          const activePane = document.getElementById(target);
+          if (activePane) activePane.classList.add('active');
         });
       });
 
-      // 5. INTERACTIVE TERMINAL EMULATOR
-      const termInput = document.getElementById('terminal-input');
-      const termHistory = document.getElementById('term-history');
-      const headerTermBtn = document.getElementById('header-term-btn');
+      // Terminal Emulator
+      const termInput = document.getElementById('term-input');
+      const termOutput = document.getElementById('term-output');
 
       const cmdMap = {
-        help: `AVAILABLE COMMANDS:
-  help       - List available commands
-  about      - Display background summary
-  skills     - View full technical stack
-  projects   - Summary of software builds
-  experience - Internship & work timeline
-  education  - Degree & university info
-  rentalease - Detailed info on flagship SaaS
-  whoami     - Current user state
-  neofetch   - System identity metadata
-  github     - Link to GitHub profile
-  contact    - Email & communication links
+        help: `Available commands:
+  help       - List options
+  about      - Profile background
+  skills     - Technical stack
+  projects   - Software builds
+  experience - Career timeline
+  education  - Degree & university
+  github     - GitHub profile link
+  linkedin   - LinkedIn profile link
+  leetcode   - LeetCode profile link
+  contact    - Email & messaging
   clear      - Clear terminal window`,
-        about: `HET PATEL — Integrated B.Tech in CS & Applied Mathematics + M.Tech in Cloud Computing at Adani University.
-Focus: Backend architecture, full-stack web applications, cloud deployment pipelines, and AI inference.`,
-        skills: `TECHNICAL STACK:
-  Languages : Python, C++, C, JavaScript, TypeScript, SQL
-  Frontend  : React, Next.js, HTML5/CSS3, Tailwind CSS
-  Backend   : FastAPI, Django, Flask, REST APIs, JWT
-  Databases : PostgreSQL, Firestore, Firebase RTDB, SQLite
-  Infra/Tools: Docker, Vercel, Git, GitHub Actions, llama.cpp`,
-        projects: `FEATURED PROJECTS:
-  1. Rentalease (Production SaaS) - Property Management & Ledger Platform
-  2. Kaccho Phool (Android/Kotlin) - Multiplayer Trick-Taking Game
-  3. TransitOps (Odoo Hackathon) - Logistics & Fleet Operations System
-  4. ShopEase (Full-Stack) - React + FastAPI + PostgreSQL E-Commerce
-  5. Local AI Chatbot (AI/LLM) - Local GGUF Model Inference Engine`,
-        experience: `CAREER TIMELINE:
-  • Python Developer Intern @ Cognifyz (Jun-Jul 2026)
-  • Full Stack Developer Intern @ RatnaBhumi Developers / Ratna Group
-  • Backend Developer Intern @ Technoville Consultants / Flamingo Group`,
-        education: `DEGREE: Integrated B.Tech (CS & Applied Math) + M.Tech (Cloud Computing)
-INSTITUTION: Adani University, Ahmedabad, India`,
-        rentalease: `RENTALEASE SAAS:
-  Website: https://rentalease.co.in
-  GitHub: https://github.com/patelhet0507/Rental-Module
-  Features: Agreements, Tenants, Accounting Ledger, Receivables Aging, AI Q&A Console`,
-        whoami: `user: guest@hetpatel.portfolio | session: authenticated | permissions: read-only`,
-        neofetch: `
-  _  _ _____ _____    _____  ___ _____ _____ _     
- | || | ____|_   _|  |  __ \\/ _ \\_   _| ____| |    
- | || |  _|   | |    | |__) | |_| || | |  _| | |    
- |__   _| |___  | |    |  ___/  _  || | | |___| |___ 
-    |_| |_____| |_|    |_|   |_| |_||_| |_____|_____|
-
- OS: HetPatel Portfolio OS v2026.4
- HOST: Adani University Cloud Lab
- KERNEL: FullStack-Cloud-AI 6.1.0
- UPTIME: 100% OPERATIONAL
- SHELL: zsh 5.9 (x86_64-apple-darwin22.0)
- USER: Het Patel (Integrated B.Tech + M.Tech)`,
-        github: `GitHub profile: https://github.com/patelhet0507`,
-        contact: `Email: patelhet.0507@gmail.com
-LinkedIn: https://www.linkedin.com/in/het-patel-6b2514376`
+        about: 'Het Patel — sophomore full-stack developer & integrated B.Tech (CS & Applied Math) + M.Tech (Cloud Computing) student at Adani University.',
+        skills: 'Languages: Python, C++, C, JS, TS, SQL\nFrontend: React, Next.js, HTML/CSS, Tailwind\nBackend: FastAPI, Django, REST, JWT\nDatabases: PostgreSQL, Firestore, Firebase RTDB, SQLite\nTools: Docker, Vercel, Git, llama.cpp',
+        projects: '1. Rentalease (Production SaaS)\n2. Kaccho Phool (Android/Kotlin Game)\n3. TransitOps (Odoo Hackathon Logistics)\n4. ShopEase (Full-Stack E-Commerce)\n5. Local AI Chatbot (FastAPI + llama.cpp)',
+        experience: 'Cognifyz (Python Intern), RatnaBhumi / Ratna Group (Full Stack Intern), Technoville / Flamingo Group (Backend Intern)',
+        education: 'Integrated B.Tech CS & Applied Mathematics + M.Tech Cloud Computing @ Adani University',
+        github: 'https://github.com/patelhet0507',
+        linkedin: 'https://www.linkedin.com/in/het-patel-6b2514376',
+        leetcode: 'https://leetcode.com/u/patelhet0507',
+        contact: 'Email: patelhet.0507@gmail.com'
       };
 
       if (termInput) {
         termInput.addEventListener('keydown', (e) => {
           if (e.key === 'Enter') {
-            const rawCmd = termInput.value.trim();
-            const cmd = rawCmd.toLowerCase();
+            const raw = termInput.value.trim();
+            const cmd = raw.toLowerCase();
             termInput.value = '';
 
-            termHistory.textContent += `\nguest@hetpatel:~$ ${rawCmd}`;
+            termOutput.textContent += `\n\nhetpatel:~$ ${raw}`;
 
             if (cmd === 'clear') {
-              termHistory.textContent = 'Terminal cleared. Type "help" for options.';
+              termOutput.textContent = 'Terminal cleared. Type "help" for commands.';
               return;
             }
 
             if (cmdMap[cmd]) {
-              termHistory.textContent += `\n${cmdMap[cmd]}`;
+              termOutput.textContent += `\n${cmdMap[cmd]}`;
             } else if (cmd !== '') {
-              termHistory.textContent += `\nCommand not found: "${rawCmd}". Type "help" to see available options.`;
+              termOutput.textContent += `\nCommand not found: ${raw}. Type "help" to see options.`;
             }
 
-            termHistory.parentElement.scrollTop = termHistory.parentElement.scrollHeight;
+            termOutput.parentElement.scrollTop = termOutput.parentElement.scrollHeight;
           }
         });
       }
 
-      if (headerTermBtn) {
-        headerTermBtn.addEventListener('click', () => {
-          const termSection = document.getElementById('terminal');
-          if (termSection) {
-            termSection.scrollIntoView({ behavior: 'smooth' });
-            setTimeout(() => termInput && termInput.focus(), 600);
-          }
-        });
-      }
-
-      // 6. REVEAL ON SCROLL INTERSECTION OBSERVER
+      // Intersection Observer Reveal
       if (!prefersReducedMotion) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
@@ -2413,52 +1616,41 @@ LinkedIn: https://www.linkedin.com/in/het-patel-6b2514376`
             }
           });
         }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
       } else {
-        document.querySelectorAll('.reveal-on-scroll').forEach(el => el.classList.add('visible'));
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
       }
 
-      // 7. MOBILE MENU TOGGLE
-      const mobileToggle = document.getElementById('mobile-toggle');
-      const navMenu = document.getElementById('nav-menu');
+      // Contact Form
+      const form = document.getElementById('contact-form');
+      const formMsg = document.getElementById('form-msg');
+      const submitBtn = document.getElementById('submit-btn');
 
-      if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', () => {
-          navMenu.classList.toggle('mobile-open');
-        });
-      }
-
-      // 8. CONTACT FORM AJAX HANDLING
-      const contactForm = document.getElementById('contact-form');
-      const statusMsg = document.getElementById('form-status-msg');
-      const submitBtn = document.getElementById('form-submit-btn');
-
-      if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+      if (form) {
+        form.addEventListener('submit', (e) => {
           e.preventDefault();
           submitBtn.disabled = true;
-          submitBtn.textContent = 'Sending Message...';
-          statusMsg.style.display = 'block';
-          statusMsg.style.color = 'var(--text-muted)';
-          statusMsg.textContent = 'Transmitting message to patelhet.0507@gmail.com...';
+          submitBtn.textContent = 'Sending...';
+          formMsg.style.display = 'block';
+          formMsg.style.color = 'var(--text-dim)';
+          formMsg.textContent = 'Transmitting message...';
 
           fetch('https://formspree.io/f/xeeyevyb', {
             method: 'POST',
-            body: new FormData(contactForm),
-            headers: { 'Accept': 'application/json' }
-          }).then(response => {
-            if (response.ok) {
-              contactForm.reset();
-              statusMsg.style.color = 'var(--accent-emerald-bright)';
-              statusMsg.textContent = '✓ Message transmitted successfully! Thank you for reaching out.';
+            body: new FormData(form),
+            headers: { Accept: 'application/json' }
+          }).then(res => {
+            if (res.ok) {
+              form.reset();
+              formMsg.style.color = 'var(--accent)';
+              formMsg.textContent = '✓ Message sent successfully.';
             } else {
-              statusMsg.style.color = '#ef4444';
-              statusMsg.textContent = '✕ Error sending message. Please email directly to patelhet.0507@gmail.com';
+              formMsg.style.color = '#ef4444';
+              formMsg.textContent = '✕ Error sending message. Please email patelhet.0507@gmail.com directly.';
             }
           }).catch(() => {
-            statusMsg.style.color = '#ef4444';
-            statusMsg.textContent = '✕ Network error. Please email directly to patelhet.0507@gmail.com';
+            formMsg.style.color = '#ef4444';
+            formMsg.textContent = '✕ Network issue. Please email patelhet.0507@gmail.com directly.';
           }).finally(() => {
             submitBtn.disabled = false;
             submitBtn.textContent = 'Send Message →';
