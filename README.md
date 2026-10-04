@@ -1,94 +1,76 @@
-<div align="center">
-  <br/>
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=28&duration=3000&pause=500&color=10B981&center=true&vCenter=true&width=435&lines=HET+PATEL;FULL-STACK+DEVELOPER;SYSTEMS+ARCHITECT" alt="Typing SVG"/>
-  <br/><br/>
+# Het Patel — Developer Portfolio
 
-  <a href="https://patelhet0507.github.io/portfolio/"><img src="https://img.shields.io/badge/LIVE-DEMO-10B981?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0F172A" alt="Live Demo"/></a>
-  <a href="https://github.com/patelhet0507"><img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=10B981" alt="GitHub"/></a>
-  <a href="https://www.linkedin.com/in/het-patel-6b2514376"><img src="https://img.shields.io/badge/LinkedIn-0F172A?style=for-the-badge&logo=linkedin&logoColor=10B981" alt="LinkedIn"/></a>
-  <a href="https://leetcode.com/u/patelhet0507"><img src="https://img.shields.io/badge/LeetCode-0F172A?style=for-the-badge&logo=leetcode&logoColor=10B981" alt="LeetCode"/></a>
+A modern, single-page developer portfolio focused on clear storytelling, strong project presentation, and performance-first frontend engineering.
 
-  <br/><br/>
+[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-10b981?style=flat-square)](https://patelhet0507.github.io/portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-patelhet0507-111827?style=flat-square&logo=github)](https://github.com/patelhet0507)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Het%20Patel-0a66c2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/het-patel-6b2514376)
 
-  <p align="center">
-    <strong>Portfolio:</strong> <a href="https://patelhet0507.github.io/portfolio/">patelhet0507.github.io/portfolio</a>
-    <br/>
-    <strong>Contact:</strong> <a href="mailto:patelhet.0507@gmail.com">patelhet.0507@gmail.com</a>
-  </p>
+## About
 
-  <br/>
-</div>
+Het Patel is an Integrated **B.Tech (Computer Science & Applied Mathematics) + M.Tech (Cloud Computing)** student at **Adani University**.
 
----
-
-## Overview
-
-A single-page static portfolio built with vanilla HTML, CSS, and JavaScript. Dark theme with emerald accents, particle network background, scroll-triggered animations, and an interactive terminal emulator.
-
-No frameworks, no build tools, no dependencies — just a single `index.html`.
-
----
-
-## Sections
-
-| Section | Description |
-|---|---|
-| **Home** | Full-viewport hero with gradient title, availability badge, and social links |
-| **About** | Bento grid: bio, education, highlights, focus areas, stats counters |
-| **Experience** | Vertical timeline with glowing indicators and gradient rail |
-| **Skills** | SVG radial progress rings (Languages, Backend, Frontend/Tools) |
-| **Projects** | 5 project cards with mouse-reactive glare overlays and live links |
-| **Terminal** | Interactive CLI emulator — try `help`, `resume`, `projects`, `skills`, `about`, `clear` |
-
----
-
-## Features
-
-- **Particle canvas** — 70-node network that reacts to mouse movement
-- **Custom cursor** — dot + trailing ring, expands on interactive elements
-- **Scroll animations** — IntersectionObserver triggers staggered reveals
-- **Skill rings** — Animated SVG radial progress bars that fill on scroll
-- **Counters** — Stat numbers count up when scrolled into view
-- **Glare effects** — Mouse-position radial highlights on bento cards and project cards
-- **Floating shapes** — Slow-drift gradient orbs behind the hero section
-- **Loading screen** — Animated brand splash that fades on load
-- **Responsive** — Adapts from desktop down to mobile with hamburger nav
-- **Active nav tracking** — Highlights current section while scrolling
-
----
+Current technical focus:
+- Full-stack development
+- Backend engineering
+- Cloud computing
+- System design
+- AI/LLM experimentation
 
 ## Tech Stack
 
-<div align="center">
+This portfolio itself is built with:
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript**
+- **Google Fonts (Inter, JetBrains Mono)**
 
-| | |
-|---|---|
-| **Languages** | Python, C++, JavaScript, TypeScript, SQL, C |
-| **Backend** | FastAPI, Flask, SQLAlchemy, PostgreSQL, Firebase, Supabase |
-| **Frontend** | React, Next.js, Tailwind CSS |
-| **Tools** | Git, Docker, Vercel, Render, Postman, Odoo, Ollama |
+No framework or build pipeline is required to run the site.
 
-</div>
+## Featured Projects
 
----
+| Project | Description | Stack | GitHub | Live |
+|---|---|---|---|---|
+| **Rentalease** | Rental & Property Management SaaS with modules for agreements, accounting workflows, renewals, reporting, and role-based access. | React, Firebase Authentication, Firestore, Vercel | [Repository](https://github.com/patelhet0507/Rental-Module) | [rentalease.co.in](https://rentalease.co.in) |
+| **Kaccho Phool** | Traditional trick-taking card game project with Android app architecture, real-time multiplayer support, and companion web presence. | Kotlin, Jetpack Compose, Firebase Auth, Firebase RTDB | [Repository](https://github.com/patelhet0507/kacchooisdaphoolisda) | [Live](https://kacchooisdaphoolisda.vercel.app/) |
+| **TransitOps** | Odoo hackathon fleet operations web app with dashboards, CRUD workflows, and reporting/export utilities. | Django, Tailwind CSS, Chart.js, PostgreSQL/SQLite | [Repository](https://github.com/patelhet0507/odoo-hackathon) | [Live](https://odoo-hackathon-wheat.vercel.app/) |
+| **ShopEase** | Full-stack e-commerce system with React frontend, FastAPI backend, JWT auth, and PostgreSQL data layer. | React, FastAPI, PostgreSQL, JWT | [Repository](https://github.com/patelhet0507/ShopEase_final) | [Live](https://shop-ease-final.vercel.app/) |
+| **Local AI Chatbot** | Local-first AI chatbot with FastAPI + React architecture and llama.cpp-based GGUF model inference workflow. | Python, FastAPI, React, llama-cpp-python | [Repository](https://github.com/patelhet0507/Local-AI-ChatBot) | — |
 
-## Running Locally
+## Experience
+
+- **Python Developer Intern — Cognifyz** (Remote, 04 Jun 2026 – 04 Jul 2026)
+- **Full Stack Developer Intern — RatnaBhumi Developers Limited / Ratna Group** (Remote)
+  - Built a Rental & Property Agreement Management System
+  - Mentor: Dhaval Moridhara
+- **Backend Developer Intern — Technoville Consultants / Flamingo Group** (Remote, completion mail dated 16 Jul 2026)
+
+## Achievements
+
+- Adobe University Hackathon — Round 2 participation
+- TVS Credit Hackathon — Round 2 participation
+- Smart India Hackathon application — Round 2
+- Microsoft Generative AI & Agents certification
+- Odoo Techfest participation
+
+## Portfolio
+
+- **Deployment:** https://patelhet0507.github.io/portfolio/
+
+## Connect
+
+- GitHub: https://github.com/patelhet0507
+- LinkedIn: https://www.linkedin.com/in/het-patel-6b2514376
+- LeetCode: https://leetcode.com/u/patelhet0507
+- Email: mailto:patelhet.0507@gmail.com
+
+## Local Development
 
 ```bash
-# Clone the repo
+# Clone
 git clone https://github.com/patelhet0507/portfolio.git
+cd portfolio
 
-# Open index.html in your browser — that's it
+# Open directly in browser
 open index.html
 ```
-
-No install, no build, no config. Just a `index.html` file.
-
----
-
-<div align="center">
-  <br/>
-  <sub><i>"I love building things that live on the internet and solve real problems for real people."</i></sub>
-  <br/>
-  <sub>© 2026 Het Patel</sub>
-</div>
