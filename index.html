@@ -3,8 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Het Patel — Full-Stack Developer</title>
+<title>Het Patel | Sophomore Full-Stack Developer</title>
+<meta name="description" content="Het Patel's portfolio — sophomore full-stack developer building backend systems, cloud-ready applications, SaaS products, and AI-assisted software.">
+<meta name="keywords" content="Het Patel, full-stack developer, FastAPI, React, cloud computing, system design, AI, portfolio, Adani University">
+<meta property="og:title" content="Het Patel | Full-Stack Developer">
+<meta property="og:description" content="Portfolio of Het Patel — full-stack projects in SaaS, backend engineering, cloud, and AI applications.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://patelhet0507.github.io/portfolio/">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Het Patel",
+  "url": "https://patelhet0507.github.io/portfolio/",
+  "sameAs": [
+    "https://github.com/patelhet0507",
+    "https://www.linkedin.com/in/het-patel-6b2514376",
+    "https://leetcode.com/u/patelhet0507"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Adani University"
+  },
+  "knowsAbout": ["Full-Stack Development", "Backend Engineering", "Cloud Computing", "AI Applications", "System Design"]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -418,6 +442,14 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   .nav-links a{padding:12px 0;border-bottom:1px solid var(--border)}
   .nav-links a:last-child{border-bottom:none}
 }
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+    scroll-behavior:auto !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -435,16 +467,16 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 <header id="header">
   <div class="nav-inner">
-    <a class="logo" id="logo-link">HET<span>.PATEL</span></a>
-    <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">&#9776;</button>
+    <a class="logo" id="logo-link" href="#hero">HET<span>.PATEL</span></a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
     <nav class="nav-links" id="nav-links">
-      <a class="active" data-target="hero">Home</a>
-      <a data-target="about">About</a>
-      <a data-target="experience">Experience</a>
-      <a data-target="skills">Skills</a>
-      <a data-target="projects">Projects</a>
-      <a data-target="contact">Contact</a>
-      <a data-target="terminal">Terminal</a>
+      <a class="active" href="#hero" data-target="hero">Home</a>
+      <a href="#about" data-target="about">About</a>
+      <a href="#experience" data-target="experience">Experience</a>
+      <a href="#skills" data-target="skills">Skills</a>
+      <a href="#projects" data-target="projects">Projects</a>
+      <a href="#contact" data-target="contact">Contact</a>
+      <a href="#terminal" data-target="terminal">Terminal</a>
     </nav>
   </div>
 </header>
@@ -459,17 +491,17 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   </div>
   <div class="hero-content">
     <div class="hero-badge reveal"><span class="pulse"></span> <span id="greeting">Hello</span> — Open to opportunities</div>
-    <h1 class="reveal">Building what matters<br>with <span class="gradient">modern systems</span></h1>
-    <p class="reveal reveal-delay-1">Full-stack developer crafting scalable products from concept to deployment. I architect backend systems and build polished interfaces that solve real problems.</p>
+    <h1 class="reveal">Building full-stack products<br>with <span class="gradient">modern systems</span></h1>
+    <p class="reveal reveal-delay-1">Sophomore full-stack developer focused on backend systems, cloud-ready applications, AI-assisted software, and practical system design.</p>
     <div class="hero-actions reveal reveal-delay-2">
       <a href="#projects" class="hero-btn primary">View Projects</a>
-      <a href="https://pdftourl.net/files/1784200742195-66ecb573-3435-45c4-aa7a-0cfb704ec254.pdf" target="_blank" class="hero-btn outline">Resume</a>
+      <a href="https://pdftourl.net/files/1784200742195-66ecb573-3435-45c4-aa7a-0cfb704ec254.pdf" target="_blank" rel="noopener noreferrer" class="hero-btn outline">Resume</a>
       <a href="#terminal" class="hero-btn secondary">Terminal</a>
     </div>
     <div class="hero-social reveal reveal-delay-3">
-      <a href="https://github.com/patelhet0507" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank">LinkedIn</a>
-      <a href="https://leetcode.com/u/patelhet0507" target="_blank">LeetCode</a>
+      <a href="https://github.com/patelhet0507" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://leetcode.com/u/patelhet0507" target="_blank" rel="noopener noreferrer">LeetCode</a>
       <a href="mailto:patelhet.0507@gmail.com">Email</a>
     </div>
   </div>
@@ -485,36 +517,37 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <div class="bento-card col-2">
       <span class="icon">👋</span>
       <h3>Hey, I'm Het Patel</h3>
-      <p>I'm a full-stack developer and Integrated B.Tech + M.Tech student at Adani University, specializing in Computer Science, Applied Mathematics, and Cloud Computing. I love building end-to-end solutions — architecting databases, designing APIs, and crafting interfaces that people enjoy using. Every line of code should earn its place.</p>
+      <p>I'm a sophomore at Adani University pursuing an Integrated B.Tech + M.Tech in Computer Science &amp; Applied Mathematics (Cloud Computing), with a current CGPA of 8.10. I build full-stack products, backend APIs, SaaS workflows, and AI-assisted applications with a strong focus on scalable architecture.</p>
       <div class="tags" style="margin-top:14px">
-        <span class="tag">Full-Stack Architecture</span>
+        <span class="tag">Full-Stack Development</span>
         <span class="tag">Backend Systems</span>
-        <span class="tag">Cloud Native</span>
-        <span class="tag">API Design</span>
+        <span class="tag">Cloud Computing</span>
+        <span class="tag">System Design</span>
       </div>
     </div>
     <div class="bento-card">
       <span class="icon">🎓</span>
       <h3>Education</h3>
       <p style="font-size:0.85rem"><strong style="color:var(--text-bright)">Integrated B.Tech + M.Tech</strong><br>CS & Applied Mathematics<br>Cloud Computing</p>
-      <p style="color:var(--accent-light);font-size:0.78rem;margin-top:6px">Adani University — 2025–2030</p>
+      <p style="color:var(--accent-light);font-size:0.78rem;margin-top:6px">Adani University — 2025–2030 · Year 2 (Sophomore) · CGPA 8.10</p>
     </div>
     <div class="bento-card">
       <span class="icon">🏆</span>
       <h3>Highlights</h3>
       <div style="font-size:0.85rem;color:var(--text-dim);line-height:2">
-        <div>🚀 4+ apps shipped</div>
-        <div>💡 Odoo Hackathon Winner</div>
-        <div>🤖 Microsoft Certified: Gen AI</div>
+        <div>🚀 6+ deployed project builds</div>
+        <div>💼 3 internships in 2026</div>
+        <div>🧪 SaaS, AI, and backend-first project work</div>
       </div>
     </div>
     <div class="bento-card col-2">
       <span class="icon">🧠</span>
       <h3>Focus Areas</h3>
       <div class="tags" style="margin-top:10px">
-        <span class="tag">Artificial Intelligence</span>
+        <span class="tag">Full-Stack Products</span>
+        <span class="tag">Backend Engineering</span>
+        <span class="tag">AI/ML Applications</span>
         <span class="tag">SaaS Platforms</span>
-        <span class="tag">Open Source</span>
         <span class="tag">Cloud Infrastructure</span>
         <span class="tag">Developer Tooling</span>
         <span class="tag">System Design</span>
@@ -525,17 +558,17 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       <h3>Contact</h3>
       <p style="font-size:0.85rem;margin-bottom:2px">patelhet.0507@gmail.com</p>
       <p style="font-size:0.78rem;color:var(--text-dim)">Open to conversations and opportunities.</p>
-      <a href="https://pdftourl.net/files/1784200742195-66ecb573-3435-45c4-aa7a-0cfb704ec254.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:0.85rem;color:var(--accent-light);text-decoration:none;font-weight:500;transition:color .2s" onmouseover="this.style.color='var(--text-white)'" onmouseout="this.style.color='var(--accent-light)'">Resume &rarr;</a>
+      <a href="https://pdftourl.net/files/1784200742195-66ecb573-3435-45c4-aa7a-0cfb704ec254.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:0.85rem;color:var(--accent-light);text-decoration:none;font-weight:500;transition:color .2s" onmouseover="this.style.color='var(--text-white)'" onmouseout="this.style.color='var(--accent-light)'">Resume &rarr;</a>
     </div>
   </div>
   <div class="stats-row reveal" style="margin-top:24px">
     <div class="stat">
-      <div class="num"><span class="counter" data-target="4">0</span>+</div>
-      <div class="label">Production Apps</div>
+      <div class="num"><span class="counter" data-target="6">0</span>+</div>
+      <div class="label">Featured Projects</div>
     </div>
     <div class="stat">
       <div class="num"><span class="counter" data-target="3">0</span>+</div>
-      <div class="label">Years Building</div>
+      <div class="label">Internships</div>
     </div>
     <div class="stat">
       <div class="num"><span class="counter" data-target="15">0</span>+</div>
@@ -555,16 +588,24 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       <div class="tl-dot"></div>
       <div class="tl-card">
         <h3>Backend Developer Intern</h3>
-        <div class="meta">Technoville Consultants Pvt. Ltd. — Jun 2026 – Jul 2026</div>
-        <p>Designed and implemented clean REST APIs in Python for authentication and business logic. Optimized PostgreSQL query performance and relational schemas. Delivered production-ready features following clean-code and performance-first engineering standards.</p>
+        <div class="meta">Technoville Consultants / Flamingo Group — Jun 2026 – Jul 2026</div>
+        <p>Contributed to backend development work in Python with API and data-focused implementation across internal business workflows.</p>
       </div>
     </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
       <div class="tl-card">
         <h3>Full Stack Developer Intern</h3>
-        <div class="meta">Ratnabhumi Developers Pvt. Ltd. (Ratna Group) — Jun 2026 · Remote</div>
-        <p>Architected and built a full-stack Rental Management SaaS platform from the ground up. Engineered frontend interfaces, modular backend services, session authentication, and Firestore database structures. Owned the entire product cycle end-to-end.</p>
+        <div class="meta">RatnaBhumi Developers Limited / Ratna Group — Jun 2026 · Remote</div>
+        <p>Worked on a Rental &amp; Property Agreement Management System across full-stack workflows.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <h3>Python Developer Intern</h3>
+        <div class="meta">Cognifyz Technologies — Jun 2026 – Jul 2026</div>
+        <p>Completed a Python development internship with implementation-focused tasks and delivery timelines.</p>
       </div>
     </div>
 
@@ -597,10 +638,10 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <img src="https://skillicons.dev/icons?i=postgres&theme=dark" alt="PostgreSQL">
         <img src="https://skillicons.dev/icons?i=firebase&theme=dark" alt="Firebase">
       </div>
-      <div class="skill-list-text">FastAPI, Flask, PostgreSQL, Firebase, Supabase</div>
+      <div class="skill-list-text">FastAPI, Flask, PostgreSQL, Firebase Auth, Firestore, Supabase, REST APIs</div>
     </div>
     <div class="skill-card">
-      <h3>Frontend &amp; Tools</h3>
+      <h3>Frontend, Cloud &amp; AI Systems</h3>
       <div class="skill-icons">
         <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React">
         <img src="https://skillicons.dev/icons?i=nextjs&theme=dark" alt="Next.js">
@@ -608,7 +649,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
         <img src="https://skillicons.dev/icons?i=git&theme=dark" alt="Git">
         <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="Docker">
       </div>
-      <div class="skill-list-text">React, Next.js, Tailwind, Git, Docker, Vercel</div>
+      <div class="skill-list-text">React, Next.js, HTML, CSS, Tailwind CSS, Git, GitHub, Docker, Vercel, LLM Applications, Local AI, System Design</div>
     </div>
   </div>
 
@@ -621,72 +662,89 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     <div class="line"></div>
   </div>
   <div class="projects-grid" data-stagger>
-    <div class="project-card grad-border">
-      <span class="badge">SaaS</span>
-      <h3>Rental Management System</h3>
-      <p>Scalable property management SaaS with multi-property agreements, tenant tracking, transaction management, and full CRUD operations. Built with React, Firebase, and Tailwind CSS.</p>
+    <div class="project-card grad-border" style="grid-column:1/-1">
+      <span class="badge">SaaS / Full Stack</span>
+      <h3>Rentalease — Rental &amp; Property Management SaaS</h3>
+      <p>Rental and property management SaaS covering companies, properties, tenants, agreements, renewals, data review, reports, and accounting workflows. Includes role-based access, Firebase authentication, Firestore data modeling, search and summary tools, and AI-assisted analytics/Q&amp;A with billing-oriented SaaS architecture.</p>
       <div class="tags">
         <span class="tag">React</span>
         <span class="tag">Firebase</span>
-        <span class="tag">Tailwind</span>
+        <span class="tag">Firestore</span>
+        <span class="tag">Vercel</span>
       </div>
       <div class="links">
-        <a href="https://rental-module.vercel.app/" target="_blank">Live Demo &rarr;</a>
+        <a href="https://rentalease.co.in" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+        <a href="https://github.com/patelhet0507/Rental-Module" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+      </div>
+    </div>
+    <div class="project-card grad-border">
+      <span class="badge">Game / Collaborative</span>
+      <h3>Kaccho Phool</h3>
+      <p>Collaborative trick-taking card game project with adaptive AI bots, online multiplayer rooms, and interactive gameplay flows. Built with a native game client and companion web experience by Het Patel, Shubham Patel, Milin Patel, Vansh Parmar, Vraj Soni, Rushi Patel, and Karma Patel.</p>
+      <div class="tags">
+        <span class="tag">Kotlin</span>
+        <span class="tag">Firebase RTDB</span>
+        <span class="tag">Android</span>
+      </div>
+      <div class="links">
+        <a href="https://kacchooisdaphoolisda.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+        <a href="https://github.com/patelhet0507/kacchooisdaphoolisda" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
       </div>
     </div>
     <div class="project-card grad-border">
       <span class="badge">Full Stack</span>
       <h3>ShopEase — E-Commerce</h3>
-      <p>End-to-end storefront with JWT authentication, product catalog with search, live cart, reviews, and comprehensive admin panel with inventory and order management.</p>
+      <p>Full-stack e-commerce platform with product browsing, cart workflows, authentication, and backend APIs for core commerce operations. Designed as a production-style web application with deployable frontend and API layers.</p>
       <div class="tags">
-        <span class="tag">Next.js</span>
+        <span class="tag">React</span>
         <span class="tag">FastAPI</span>
         <span class="tag">PostgreSQL</span>
       </div>
       <div class="links">
-        <a href="https://shop-ease-final.vercel.app/" target="_blank">Live Demo &rarr;</a>
-        <a href="https://github.com/patelhet0507/ShopEase_final" target="_blank">GitHub &rarr;</a>
+        <a href="https://shop-ease-final.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+        <a href="https://github.com/patelhet0507/ShopEase_final" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
       </div>
     </div>
     <div class="project-card grad-border">
       <span class="badge">AI</span>
-      <h3>Local AI Chat Assistant</h3>
-      <p>Offline privacy-first chatbot using local LLM inference via Ollama. Telegram OTP authentication, persistent session tracking, and local SQLite storage — zero third-party network dependencies.</p>
+      <h3>Local AI Chatbot</h3>
+      <p>Privacy-first chatbot project with local GGUF model inference through llama.cpp, FastAPI backend APIs, and React frontend chat UX. Includes streaming responses and local-first AI workflow support.</p>
       <div class="tags">
         <span class="tag">Python</span>
-        <span class="tag">Ollama</span>
-        <span class="tag">SQLite</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">llama.cpp</span>
       </div>
       <div class="links">
-        <a href="https://github.com/patelhet0507" target="_blank">GitHub &rarr;</a>
+        <a href="https://github.com/patelhet0507/Local-AI-ChatBot" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
       </div>
     </div>
     <div class="project-card grad-border">
       <span class="badge">Hackathon</span>
-      <h3>TransitOps</h3>
-      <p>Transport operations management built in an 8-hour Odoo Hackathon. Live vehicle tracking, dynamic dispatch, predictive maintenance, and real-time expense analytics dashboards.</p>
+      <h3>TransitOps — Odoo Hackathon Project</h3>
+      <p>Hackathon-built transit operations platform with dashboards, fleet records, trip and maintenance tracking, and report exports. Implements role-based operations workflow with deployable web architecture.</p>
       <div class="tags">
-        <span class="tag">Odoo</span>
-        <span class="tag">Python</span>
+        <span class="tag">Django</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">Chart.js</span>
         <span class="tag">PostgreSQL</span>
       </div>
       <div class="links">
-        <a href="https://odoo-hackathon-wheat.vercel.app/" target="_blank">Live Demo &rarr;</a>
-        <a href="https://github.com/patelhet0507/odoo-hackathon" target="_blank">GitHub &rarr;</a>
+        <a href="https://odoo-hackathon-wheat.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+        <a href="https://github.com/patelhet0507/odoo-hackathon" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
       </div>
     </div>
-    <div class="project-card grad-border" style="grid-column:1/-1">
-      <span class="badge">Library</span>
+    <div class="project-card grad-border">
+      <span class="badge">Full Stack</span>
       <h3>eBook Library Platform</h3>
-      <p>Digital media indexing and reading platform with authenticated user profiles, full-text search across the book catalog, interactive library management, and real-time cloud storage via Firebase.</p>
+      <p>Digital library web application for browsing and managing book collections with modern frontend and API-driven workflows.</p>
       <div class="tags">
-        <span class="tag">React</span>
-        <span class="tag">Firebase</span>
-        <span class="tag">Tailwind</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Prisma</span>
       </div>
       <div class="links">
-        <a href="https://ebooklibrary-five.vercel.app/" target="_blank">Live Demo &rarr;</a>
-        <a href="https://github.com/patelhet0507" target="_blank">GitHub &rarr;</a>
+        <a href="https://ebooklibrary-five.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+        <a href="https://github.com/patelhet0507/ebooklibrary" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
       </div>
     </div>
   </div>
@@ -706,15 +764,15 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       </div>
       <div class="card">
         <div class="label">GitHub</div>
-        <div class="value"><a href="https://github.com/patelhet0507" target="_blank">github.com/patelhet0507</a></div>
+        <div class="value"><a href="https://github.com/patelhet0507" target="_blank" rel="noopener noreferrer">github.com/patelhet0507</a></div>
       </div>
       <div class="card">
         <div class="label">LinkedIn</div>
-        <div class="value"><a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank">linkedin.com/in/het-patel</a></div>
+        <div class="value"><a href="https://www.linkedin.com/in/het-patel-6b2514376" target="_blank" rel="noopener noreferrer">linkedin.com/in/het-patel-6b2514376</a></div>
       </div>
       <div class="card">
         <div class="label">Resume</div>
-        <div class="value"><a href="https://pdftourl.net/files/1784200742195-66ecb573-3435-45c4-aa7a-0cfb704ec254.pdf" target="_blank">View Resume &rarr;</a></div>
+        <div class="value"><a href="https://pdftourl.net/files/1784200742195-66ecb573-3435-45c4-aa7a-0cfb704ec254.pdf" target="_blank" rel="noopener noreferrer">View Resume &rarr;</a></div>
       </div>
     </div>
     <form class="contact-form reveal reveal-delay-1" id="contact-form">
@@ -754,7 +812,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       <div class="output" id="term-output">Welcome to Het Patel's interactive terminal.<br>Type <span style="color:var(--text-white)">help</span> to see available commands.</div>
       <div class="term-line">
         <span class="term-prompt">[guest@patelhet]$</span>
-        <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false">
+        <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
       </div>
     </div>
   </div>
@@ -779,29 +837,33 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   setTimeout(function(){
     document.getElementById('loader').classList.add('hidden')
   },3000);
+  var prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isTouchDevice=window.matchMedia('(pointer: coarse)').matches||('ontouchstart' in window);
 
   // ── Cursor ──
   var dot=document.getElementById('cursor-dot');
   var ring=document.getElementById('cursor-ring');
   var cx=0,cy=0,rx=0,ry=0;
-  document.addEventListener('mousemove',function(e){
-    cx=e.clientX;cy=e.clientY;
-    dot.style.left=cx+'px';dot.style.top=cy+'px';
-  });
-  function cursorLoop(){
-    if(window.innerWidth>950){
-      rx+=(cx-rx)*0.12;ry+=(cy-ry)*0.12;
-      ring.style.left=rx+'px';ring.style.top=ry+'px';
+  if(!isTouchDevice&&!prefersReducedMotion){
+    document.addEventListener('mousemove',function(e){
+      cx=e.clientX;cy=e.clientY;
+      dot.style.left=cx+'px';dot.style.top=cy+'px';
+    },{passive:true});
+    function cursorLoop(){
+      if(window.innerWidth>950){
+        rx+=(cx-rx)*0.12;ry+=(cy-ry)*0.12;
+        ring.style.left=rx+'px';ring.style.top=ry+'px';
+      }
+      requestAnimationFrame(cursorLoop);
     }
-    requestAnimationFrame(cursorLoop);
+    cursorLoop();
+    document.addEventListener('mouseover',function(e){
+      if(e.target.closest('a,button,input'))document.body.classList.add('cursor-hover');
+    });
+    document.addEventListener('mouseout',function(e){
+      if(e.target.closest('a,button,input'))document.body.classList.remove('cursor-hover');
+    });
   }
-  cursorLoop();
-  document.addEventListener('mouseover',function(e){
-    if(e.target.closest('a,button,input'))document.body.classList.add('cursor-hover');
-  });
-  document.addEventListener('mouseout',function(e){
-    if(e.target.closest('a,button,input'))document.body.classList.remove('cursor-hover');
-  });
 
   // ── Nav ──
   var navLinks=document.getElementById('nav-links');
@@ -828,9 +890,13 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     e.preventDefault();
     var el=document.getElementById(a.dataset.target);
     if(el)el.scrollIntoView({behavior:'smooth'});
-    document.getElementById('mobile-toggle')&&document.getElementById('nav-links').classList.remove('open');
+    if(document.getElementById('mobile-toggle')){
+      document.getElementById('nav-links').classList.remove('open');
+      document.getElementById('mobile-toggle').setAttribute('aria-expanded','false');
+    }
   });
-  document.getElementById('logo-link').addEventListener('click',function(){
+  document.getElementById('logo-link').addEventListener('click',function(e){
+    e.preventDefault();
     document.getElementById('hero').scrollIntoView({behavior:'smooth'});
   });
 
@@ -848,6 +914,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   if(mobToggle){
     mobToggle.addEventListener('click',function(){
       navLinks.classList.toggle('open');
+      mobToggle.setAttribute('aria-expanded',navLinks.classList.contains('open')?'true':'false');
     });
   }
 
@@ -950,22 +1017,26 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
 
 
   // ── Bento Card Glare ──
-  document.addEventListener('mousemove',function(e){
-    document.querySelectorAll('.bento-card').forEach(function(card){
-      var rect=card.getBoundingClientRect();
-      card.style.setProperty('--mx',(e.clientX-rect.left)+'px');
-      card.style.setProperty('--my',(e.clientY-rect.top)+'px');
-    });
-  });
+  if(!isTouchDevice&&!prefersReducedMotion){
+    document.addEventListener('mousemove',function(e){
+      document.querySelectorAll('.bento-card').forEach(function(card){
+        var rect=card.getBoundingClientRect();
+        card.style.setProperty('--mx',(e.clientX-rect.left)+'px');
+        card.style.setProperty('--my',(e.clientY-rect.top)+'px');
+      });
+    },{passive:true});
+  }
 
   // ── Project Card Glare ──
-  document.addEventListener('mousemove',function(e){
-    document.querySelectorAll('.project-card').forEach(function(card){
-      var rect=card.getBoundingClientRect();
-      card.style.setProperty('--mx',((e.clientX-rect.left)/rect.width*100)+'%');
-      card.style.setProperty('--my',((e.clientY-rect.top)/rect.height*100)+'%');
-    });
-  });
+  if(!isTouchDevice&&!prefersReducedMotion){
+    document.addEventListener('mousemove',function(e){
+      document.querySelectorAll('.project-card').forEach(function(card){
+        var rect=card.getBoundingClientRect();
+        card.style.setProperty('--mx',((e.clientX-rect.left)/rect.width*100)+'%');
+        card.style.setProperty('--my',((e.clientY-rect.top)/rect.height*100)+'%');
+      });
+    },{passive:true});
+  }
 
   // ── Background Particle Canvas ──
   var canvas=document.getElementById('bg-canvas');
@@ -979,7 +1050,9 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   }
   function initParticles(){
     particles=[];
-    var count=Math.min(70,Math.floor((canvas.width*canvas.height)/22000));
+    var density=isTouchDevice||prefersReducedMotion?42000:22000;
+    var maxParticles=isTouchDevice||prefersReducedMotion?28:70;
+    var count=Math.min(maxParticles,Math.floor((canvas.width*canvas.height)/density));
     for(var i=0;i<count;i++){
       particles.push({
         x:Math.random()*canvas.width,
@@ -1000,7 +1073,7 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
       if(p.y<0||p.y>canvas.height)p.vy*=-1;
       var dx=mouse.x-p.x,dy=mouse.y-p.y;
       var dist=Math.hypot(dx,dy);
-      if(dist<100){
+      if(dist>0&&dist<100){
         var force=(100-dist)/100;
         p.x-=(dx/dist)*force*1.8;
         p.y-=(dy/dist)*force*1.8;
@@ -1030,7 +1103,9 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
   window.addEventListener('resize',resizeCanvas);
   resizeCanvas();
   drawParticles();
-  document.addEventListener('mousemove',function(e){mouse.x=e.clientX;mouse.y=e.clientY},{passive:true});
+  if(!isTouchDevice&&!prefersReducedMotion){
+    document.addEventListener('mousemove',function(e){mouse.x=e.clientX;mouse.y=e.clientY},{passive:true});
+  }
 
   // ── Terminal ──
   var termInput=document.getElementById('term-input');
@@ -1043,11 +1118,17 @@ footer .copy{font-size:0.78rem;color:var(--text-dim)}
     },{threshold:0.3});
     termObserver.observe(document.getElementById('terminal'));
     var commands={
-      help:'Available commands:\n  <span style="color:var(--text-white)">resume</span>    — Contact and profile info\n  <span style="color:var(--text-white)">projects</span> — List all projects\n  <span style="color:var(--text-white)">skills</span>   — Tech stack overview\n  <span style="color:var(--text-white)">about</span>    — Quick summary\n  <span style="color:var(--text-white)">clear</span>    — Clear terminal',
-      resume:'Email:    <span style="color:var(--text-white)">patelhet.0507@gmail.com</span>\nGitHub:   <span style="color:var(--text-white)">github.com/patelhet0507</span>\nLinkedIn: <span style="color:var(--text-white)">linkedin.com/in/het-patel-6b2514376</span>\nLeetCode: <span style="color:var(--text-white)">leetcode.com/u/patelhet0507</span>',
-      projects:'1. <span style="color:var(--text-white)">Rental Management System</span> — SaaS platform\n2. <span style="color:var(--text-white)">ShopEase</span> — Full-stack e-commerce\n3. <span style="color:var(--text-white)">Local AI Chat Assistant</span> — Privacy-first chatbot\n4. <span style="color:var(--text-white)">TransitOps</span> — Odoo hackathon project\n5. <span style="color:var(--text-white)">eBook Library</span> — Digital media platform',
-      skills:'<span style="color:var(--text-white)">Languages:</span>  Python, C++, JavaScript, TypeScript, SQL, C\n<span style="color:var(--text-white)">Backend:</span>     FastAPI, Flask, SQLAlchemy, PostgreSQL, Firebase, Supabase\n<span style="color:var(--text-white)">Frontend:</span>    React, Next.js, Tailwind CSS\n<span style="color:var(--text-white)">Tools:</span>        Git, Docker, Vercel, Render, Postman, Odoo, Ollama',
-      about:'Het Patel — Full-stack developer and Integrated B.Tech+M.Tech student at Adani University. I build scalable products, architect backend systems, and ship end-to-end solutions.'
+      help:'Available commands:\n  <span style="color:var(--text-white)">about</span>      — Quick profile summary\n  <span style="color:var(--text-white)">projects</span>   — Featured project list\n  <span style="color:var(--text-white)">skills</span>     — Current stack overview\n  <span style="color:var(--text-white)">experience</span> — Internship timeline\n  <span style="color:var(--text-white)">resume</span>     — Resume link\n  <span style="color:var(--text-white)">github</span>     — GitHub profile\n  <span style="color:var(--text-white)">linkedin</span>   — LinkedIn profile\n  <span style="color:var(--text-white)">leetcode</span>   — LeetCode profile\n  <span style="color:var(--text-white)">contact</span>    — Email and links\n  <span style="color:var(--text-white)">rentalease</span> — Primary SaaS project\n  <span style="color:var(--text-white)">clear</span>      — Clear terminal',
+      about:'Het Patel — Sophomore (Year 2) at Adani University, Integrated B.Tech + M.Tech in CS & Applied Mathematics (Cloud Computing), CGPA 8.10. Building full-stack software with focus on backend systems, cloud, AI, and system design.',
+      projects:'1. <span style="color:var(--text-white)">Rentalease</span> — Rental & Property Management SaaS\n2. <span style="color:var(--text-white)">Kaccho Phool</span> — Collaborative card game project\n3. <span style="color:var(--text-white)">ShopEase</span> — Full-stack e-commerce platform\n4. <span style="color:var(--text-white)">Local AI Chatbot</span> — Local LLM chat application\n5. <span style="color:var(--text-white)">TransitOps</span> — Odoo hackathon operations app\n6. <span style="color:var(--text-white)">eBook Library</span> — Digital library web platform',
+      skills:'<span style="color:var(--text-white)">Languages:</span> Python, C++, JavaScript, TypeScript, C, SQL\n<span style="color:var(--text-white)">Backend:</span> FastAPI, Flask, PostgreSQL, Firebase Auth, Firestore, Supabase, REST APIs\n<span style="color:var(--text-white)">Frontend:</span> React, Next.js, HTML, CSS, Tailwind CSS\n<span style="color:var(--text-white)">Cloud/Tools:</span> Git, GitHub, Docker, Vercel, Firebase\n<span style="color:var(--text-white)">AI/Systems:</span> LLM applications, Local AI, AI-assisted apps, System Design',
+      experience:'1. <span style="color:var(--text-white)">Backend Developer Intern</span> — Technoville Consultants / Flamingo Group (Jun 2026 – Jul 2026)\n2. <span style="color:var(--text-white)">Full Stack Developer Intern</span> — RatnaBhumi Developers Limited / Ratna Group, Remote (Jun 2026)\n3. <span style="color:var(--text-white)">Python Developer Intern</span> — Cognifyz Technologies (Jun 2026 – Jul 2026)',
+      resume:'Resume: <span style="color:var(--text-white)">https://pdftourl.net/files/1784200742195-66ecb573-3435-45c4-aa7a-0cfb704ec254.pdf</span>',
+      github:'GitHub: <span style="color:var(--text-white)">https://github.com/patelhet0507</span>',
+      linkedin:'LinkedIn: <span style="color:var(--text-white)">https://www.linkedin.com/in/het-patel-6b2514376</span>',
+      leetcode:'LeetCode: <span style="color:var(--text-white)">https://leetcode.com/u/patelhet0507</span>',
+      contact:'Email: <span style="color:var(--text-white)">patelhet.0507@gmail.com</span>\nGitHub: <span style="color:var(--text-white)">github.com/patelhet0507</span>\nLinkedIn: <span style="color:var(--text-white)">linkedin.com/in/het-patel-6b2514376</span>',
+      rentalease:'Rentalease — Rental & Property Management SaaS\nLive: <span style="color:var(--text-white)">https://rentalease.co.in</span>\nGitHub: <span style="color:var(--text-white)">https://github.com/patelhet0507/Rental-Module</span>'
     };
     termInput.addEventListener('keydown',function(e){
       if(e.key!=='Enter')return;
